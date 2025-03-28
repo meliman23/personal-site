@@ -132,7 +132,7 @@ h1 {
 /* Spin animation */
 @keyframes spinny {
   0% {
-    transform: translateX(100%);
+    transform: translateX(70%);
   }
   
   100% {
@@ -146,14 +146,11 @@ h1 {
   width: 100vw;
   overflow: hidden;
 }
-
 .stamps span {
   display: inline-block;
   white-space: nowrap;
-  animation: spinny 20s linear infinite;
+  animation: spinny 25s linear infinite;
 }
-
-
 .stamps :hover{
   animation-play-state: paused; 
 }
@@ -164,7 +161,6 @@ h1 {
   transition: transform 0.3s ease-in-out;
   position: relative;
 }
-
 .stamps img::after {
   content: attr(alt);
   position: absolute;
@@ -180,13 +176,11 @@ h1 {
   visibility: hidden;
   transition: opacity 0.2s ease-in-out;
 }
-
 .stamps img:hover {
   transform: scale(1.3);
   animation-play-state: paused; 
  
 }
-
 .stamps img:hover::after {
   opacity: 1;
   animation-play-state: paused; 
@@ -203,7 +197,6 @@ h1 {
   animation-delay: calc(0.1s * var(--i));
   color: var(--accent);
 }
-
 @keyframes bouncy {
   0%, 100% {
     transform: translateY(0);
@@ -213,6 +206,7 @@ h1 {
     animation-timing-function: ease-out;
   }
 }
+
 /* hr animation */
 hr.expand {
   width: 0;
@@ -223,7 +217,6 @@ hr.expand {
   transition: width 1.5s ease-out;
   animation: stretch 5s ease-out forwards;
 }
-
 @keyframes stretch {
   from {
     width: 0;
@@ -280,7 +273,7 @@ hr.expand {
   flex-direction: column;
   padding: 36px;
   margin: 12px;
-  max-width: 70vw;
+  max-width: 500px;
   min-width: 50vw;
   height: auto;
   box-shadow: 0 5px 10px 5px var(--accent);
@@ -291,11 +284,9 @@ hr.expand {
   overflow: hidden; /* Prevents content from spilling out */
   word-wrap: break-word; /* Ensures long words break properly */
 }
-
 .textbox p {
   font-size: 18px;
 }
-
 /* Tooltip styling */
 .blinkie::after {
   content: "My own blinkie ...nice"; /* Tooltip text */
@@ -327,7 +318,8 @@ hr.expand {
   height: auto;
 }
 .updates{
-  width: 20vw;
+  max-width: 300px;
+  min-width: 200px;
   height: 20vh;
   border: solid 4px var(--accent);
   border-radius: 22px;
@@ -418,7 +410,7 @@ hr.expand {
   
  
 }
-.e
+
 .espeon {
   height: 500px;
   width: 100px;
@@ -497,19 +489,29 @@ animation: fly 10s infinite ease ;
     color: rgb(55, 98, 136);
 
   }
+  .top{
+    background-color: var(--green);
+  }
     a{
-      color: blue;
+      color: var(--base);
+     margin: 8px 8px;
+     padding: 8px 8px;
+     
+    }
+  .links a{
+      background-color: var(--green);
+     border-radius: 12px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
     }
   .container {
     flex-direction: column;
     gap: 20px;
     color: pink;
+    
   }
-  .pokemon{
-    display: none;
-  }
-
- 
+  
   @keyframes fly {
     0%{transform: translatey(300px);}
     50%{transform: translatey(200px);}
@@ -517,7 +519,6 @@ animation: fly 10s infinite ease ;
     90%{transform: translatey(240px)}
     100% {transform: translatey(0px);}
   }
-  
   /* show */
   .mobile{
     display: block;
@@ -526,11 +527,22 @@ animation: fly 10s infinite ease ;
    border-radius: 12px;
     background-color: var(--green);
   }
+  .links{
+    display: flex;
+    flex-direction: column;
+   
+  }
+
   .textbox{
     height: auto;
+    box-shadow: 0 5px 8px 5px var(--green);
+    border: solid 4px var(--green);
   }
   /* none */
   .stamp{
+    display: none;
+  }
+  .pokemon{
     display: none;
   }
   .card{
@@ -547,6 +559,9 @@ animation: fly 10s infinite ease ;
   display: none;
  }
  .column{
+  display: none;
+ }
+ .tcard{
   display: none;
  }
 }

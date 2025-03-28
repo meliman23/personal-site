@@ -6,7 +6,9 @@
   --secondary: rgb(113, 113, 197);
 }
 /* Start https://www.cursors-4u.com */
- * {cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur265.cur), auto !important;} /* End https://www.cursors-4u.com */
+ * {cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur265.cur), auto !important;
+}
+/* End https://www.cursors-4u.com */
 
 body {
   background-image: url('../pictures/stuff/cloud-4.gif'); /* Replace with your image URL */
@@ -158,4 +160,43 @@ text-align: center;
 img{
   height: 200px;
   width: auto;
+}
+.mobile{
+  display: none;
+}
+@media (max-width: 600px) {
+  .mobile{
+    display: block;
+    
+  }
+ul{
+  list-style-type: none;
+}
+li{
+  display: flex;
+  margin: 6px;
+}
+a{
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+  background-color: var(--text);
+  width: 350px;
+  padding: 8px;
+  border-radius: 6px;
+  margin: 6px;
+}
+a:hover{
+  color: var(--accent);
+}
+  /* none */
+  .navigation{
+    display: none;
+  }
+  .bubble-container{
+    display: none;
+  }
+  .text{
+    display: none;
+  }
 }
