@@ -1,0 +1,82 @@
+/* General Styles */
+body {
+    background: linear-gradient(135deg, #112, #335); /* Gen 4 inspired colors */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+    color: beige;
+}
+
+
+
+
+/* Spin animation */
+@keyframes spinny {
+    0% {
+      transform: translateX(100%);
+    }
+    
+    100% {
+      transform: translateX(-400%);
+    }
+  }
+  @keyframes spinny2 {
+    0% {
+      transform: translateX(-100%);
+    }
+    
+    100% {
+      transform: translateX(400%);
+    }
+  }
+  /* stamp css */
+  .stamps {
+    gap: 10px;
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  .stamps span {
+    display: inline-block;
+    white-space: nowrap;
+    animation: spinny 14s linear infinite;
+  }
+  
+
+  .stamps img {
+    width: auto;
+    height: 31px;
+    margin-right: 1px;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+  }
+  .stamps2 {
+    gap: 10px;
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  .stamps2 span {
+    display: inline-block;
+    white-space: nowrap;
+    animation: spinny2 14s linear infinite;
+  }
+  
+
+  .stamps2 img {
+    width: auto;
+    height: 31px;
+    margin-right: 1px;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  
+

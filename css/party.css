@@ -1,0 +1,85 @@
+:root{
+    --blue:rgb(76, 130, 139);
+    --red:rgb(137, 58, 27);
+    --text:antiquewhite;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--blue);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: var(--text);
+    position: relative;
+}
+a{
+    width: auto;
+}
+.box{
+    background-image: url("../pictures/stuff/kamihouse.jpeg");
+    background-size: cover; /* Cover entire div */
+    background-position: center; /* Center image */
+    background-repeat: no-repeat; /* Prevent repetition */
+    border: solid 14px var(--red);
+    border-radius: 23px;
+    width: 70vw;
+    height: 30vw;
+    position: relative;
+    display: flex;
+}
+
+img{
+    height: 24%;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+.espeon:hover::after{
+    
+    background-color: var(--blue); /* Change the background color */
+    color: var(--text);
+    content: "follow me to the blog :)";
+    position: absolute;
+    top: -8%;
+   
+    transform: translateX(-50%);
+  
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(146, 105, 165, 0.283);
+    
+    pointer-events: none;
+  z-index: 10;
+  }
+.pos{
+    display: flex;
+   
+    flex-direction: row;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+ 
+ 
+}
+.cat{
+    position:absolute;
+    right:0;
+    top: 50%;
+    width: 10vw;
+    height: auto;
+}
+.statue{
+    position:absolute;
+    left:10%;
+    top: 50%;
+    width: auto;
+    height: 40%;
+
+}

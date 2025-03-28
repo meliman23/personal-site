@@ -1,0 +1,161 @@
+/* Variables for color scheme */
+:root {
+  --text: rgb(30, 30, 172);
+  --base: rgb(67, 67, 71);
+  --accent: rgb(247, 60, 197);
+  --secondary: rgb(113, 113, 197);
+}
+/* Start https://www.cursors-4u.com */
+ * {cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur265.cur), auto !important;} /* End https://www.cursors-4u.com */
+
+body {
+  background-image: url('../pictures/stuff/cloud-4.gif'); /* Replace with your image URL */
+  /* Makes sure the image covers the entire screen */
+  background-position: center; /* Centers the image */
+ /* Prevents tiling */
+  color: var(--text);
+  font-family: 'Source Code Pro', monospace;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden; /* Ensure no scrolling */
+}
+
+ .text{
+  border-right: 8px solid var(--accent);
+padding: 12px;
+width: 50vw;
+height: 100%;
+background-color: rgba(248, 154, 253, 0.313);
+border-radius: 50px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+ }
+
+/* Bubble container */
+.bubble-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Individual bubbles */
+.bubble {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: lightblue;
+  color: #112;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 40px 40px rgba(0, 0, 0, 0.3);
+  animation: float 15s infinite ease-in-out;
+}
+.bubble:hover {
+  animation-play-state: paused; /* Pauses the float animation */
+ /* Change the background color */
+  background-color: rgb(222, 152, 217);
+  color: white; /* Change text color */
+  transform: scale(1.3); /* Scale up the bubble */
+}
+.blog:hover::after{
+  animation-play-state: paused; /* Pauses the float animation */
+  background-color: rgb(154, 78, 171); /* Change the background color */
+  color: white; /* Change text color */
+  transform: scale(1.6); /* Scale up the bubble */
+  content: "My blog is somwhere... else good luck :3";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  pointer-events: none;
+  z-index: 10;
+}
+.blog:hover{
+  animation-play-state: paused; /* Pauses the float animation */
+  background-color: purple; /* Change the background color */
+  color: white; /* Change text color */
+  transform: scale(1.3); /* Scale up the bubble */
+  
+}
+
+.bubble a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Bubble float animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-180px) translateX(-580px);
+  }
+
+  70% {
+    transform: translateY(70px) translateX(140px);
+  }
+  50% {
+    transform: translateY(0px) translateX(70px);
+  }
+
+  90% {
+    transform: translateY(50px) translateX(100px);
+  }
+}
+
+/* Specific bubble positions with delays */
+.bubble:nth-child(1) { top: 10%; left: 20%; animation-delay: 1s; }
+.bubble:nth-child(2) { top: 30%; left: 50%; animation-delay: 2s; }
+.bubble:nth-child(3) { top: 50%; left: 30%; animation-delay: 2.5s; }
+.bubble:nth-child(4) { top: 20%; left: 70%; animation-delay: 1.5s; }
+.bubble:nth-child(5) { top: 40%; left: 10%; animation-delay: 2.9s; }
+.bubble:nth-child(6) { top: 60%; left: 60%; animation-delay: 4s; }
+
+
+/* Navigation styling */
+.navigation {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.navigation a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+img{
+  height: 200px;
+  width: auto;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/blinkie.css">
+</head>
+<body>
+    <div class="stamps">
+        <span>
+          <img src="./blinkie/train.gif" alt="Train animation">
+          <img src="./blinkie/1ai.gif" >
+          <img src="./blinkie/2bfdi-lollipop-blinkie.gif" >
+          <img src="./blinkie/3computerloverblinkie.gif" >
+          <img src="./blinkie/4d26.gif" >
+          <img src="./blinkie/5handcoded.png" >
+          <img src="./blinkie/6hashtaggirl.gif" >
+          <img src="./blinkie/7i_like_computer.png" >
+          <img src="./blinkie/8windose.png" >
+          <img src="./blinkie/19.gif" >
+          <img src="./blinkie/10hate.gif" >
+          <img src="./blinkie/11truth.gif" >
+          <img src="./blinkie/12babe.gif" >
+          <img src="./blinkie/13share.gif" >
+          <img src="./blinkie/14chibimon.gif" >
+          <img src="blinkie/15fluttershy.gif" alt="">
+          <img src="blinkie/16fubutton16.gif" alt="">
+          <img src="blinkie/17gaslight%20gatekeep%20girlboss.gif" alt="">
+         
+         
+        </span>
+      </div>
+      <h1>Watch out there comming </h1>
+      <div class="stamps2">
+        <span>
+          <img src="./blinkie/train.gif" alt="Train animation">
+          <img src="./blinkie/1ai.gif" >
+          <img src="./blinkie/2bfdi-lollipop-blinkie.gif" >
+          <img src="./blinkie/3computerloverblinkie.gif" >
+          <img src="./blinkie/4d26.gif" >
+          <img src="./blinkie/5handcoded.png" >
+          <img src="./blinkie/6hashtaggirl.gif" >
+          <img src="./blinkie/7i_like_computer.png" >
+          <img src="./blinkie/8windose.png" >
+          <img src="./blinkie/19.gif" >
+          <img src="./blinkie/10hate.gif" >
+          <img src="./blinkie/11truth.gif" >
+          <img src="./blinkie/12babe.gif" >
+          <img src="./blinkie/13share.gif" >
+          <img src="./blinkie/14chibimon.gif" >
+          <img src="blinkie/15fluttershy.gif" alt="">
+          <img src="blinkie/16fubutton16.gif" alt="">
+          <img src="blinkie/17gaslight%20gatekeep%20girlboss.gif" alt="">
+         
+         
+        </span>
+      </div>
+      <div>
+        <img src="./blinkie/20online.gif" alt="">
+        <img src="./blinkie/1ai.gif" alt="">
+        <img src="./blinkie/tiktok.gif" alt="">
+        <img src="./blinkie/10hate.gif" alt="">
+        <img src="./blinkie/11truth.gif" alt="">
+        <img src="./blinkie/12babe.gif" alt="">
+        <img src="./blinkie/13share.gif" alt="">
+        <img src="./blinkie/15fluttershy.gif" alt="">
+        <img src="./blinkie/" alt="">
+        <img src="./blinkie/" alt="">
+        <img src="./blinkie/" alt="">
+        <img src="./blinkie/" alt="">
+        <img src="./blinkie/" alt="">
+        <img src="./blinkie/" alt="">
+        <img src="./blinkie/" alt="">
+        <img src="./blinkie/" alt="">
+      </div>
+      <div id="image-container"></div>
+
+      <script>
+        // Array of image file names (assuming they're in an "images" folder)
+        const imageFiles = ["19.gif","20online.gif","blinkie/1ai.gif"];
+
+        // Reference to the container where images will be added
+        const container = document.getElementById("image-container");
+
+        // Loop through the image array
+        imageFiles.forEach(file => {
+            const img = document.createElement("img"); // Create img element
+            img.src = `blinkie/${file}`; // Set the src attribute
+            img.alt = file; // Add alt text
+            img.style.width = "200px"; // Example styling
+            img.style.margin = "10px"; 
+
+            container.appendChild(img); // Add to the page
+        });
+    </script>
+
+</body>
+</html>

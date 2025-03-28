@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome!</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background-image">
+ 
+    <img src="./blinkie/14chibimon.gif" alt="Chibimon">
+    <div class="row girl-container">
+      <a href="./m.meta.html">
+          <img src="./pictures/girl pics/orange and black.png" class="girl" alt="Girl"></a>
+      <img id="pokemon" class="pokemon" src="" alt="Random Pokémon">
+    </div>
+  
+  </div>
+ 
+    <div class="mobile">
+      <p>Uh oh Looks like your on mobile </p>
+      <p>I made my site mostly for desktop so you might have a little trouble :3</p>
+      <p>take this way instead ⬇️</p>
+      <a href="./a.coolStuff.html">
+        <button>Mobile Travalers only </button>
+      </a>
+    </div>
+  
+  <div class="box">
+    <p>💫 Whoa! A new visitor is here
+      What will you do?</p>
+  </div>
+  <div class="row">
+    <button><a href="./index2.html">Enter Website </a></button>
+    <button><a href="./m.linksout.html">leave</a></button>
+  </div>
+  <div class="abs">
+    <a href="https://www.mabsland.com/Adoption.html">
+    <img src="./pictures/stuff/Censor_14a.gif" alt="">
+    </a>
+   </div>
+  <script>
+    // Array of Pokémon image URLs
+    const pokemonImages = [
+      'pictures/pokemon/dragonite.gif',
+      'pictures/pokemon/drifblim.gif',
+      'pictures/pokemon/espeon.gif',
+      'pictures/pokemon/roserade-f.gif',
+      'pictures/pokemon/volcarona.gif',
+      'pictures/pokemon/hydreigon.gif',
+      
+
+    ];
+
+     // Select a random Pokémon image
+    const randomPokemon = pokemonImages[Math.floor(Math.random() * pokemonImages.length)];
+
+      // Set the Pokémon image source
+    const pokemonElement = document.getElementById('pokemon');
+    pokemonElement.src = randomPokemon;
+  </script>
+</body>
+</html>

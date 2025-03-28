@@ -1,0 +1,53 @@
+:root{
+    --blue:rgb(21, 25, 45);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../pictures/stuff/bck-starnight\ black.gif'); 
+    background-position: center;
+    background-size: cover; /* Ensures the image covers the full screen */
+    color: white;
+    font-family: monospace;
+}
+img{
+    border-radius: 23px;
+    width: 30vw;
+    height: 30vh;
+    padding: 8px;
+    background: #ffffff;
+    margin: 0;
+    margin: 0;
+}
+a{
+    padding: 0;
+    margin: 0;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.neck{
+    margin: 0;
+   border: solid 4px white ;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    
+}
+.base{
+    margin: 0;
+    padding: 8px;
+    background: #ffffff;
+    height: 10px;
+    width: 30%;
+border-top-left-radius:8px ;
+border-top-right-radius:8px ;
+
+}

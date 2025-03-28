@@ -1,0 +1,179 @@
+:root {
+  --text: #c7c2e6;
+  --base: #112;
+  --accent: rgb(168, 174, 206);
+  --secondary: rgb(76, 107, 157);
+  --green: rgb(93, 111, 93);
+}
+
+body {
+  background-image: url('../pictures/stuff/wall_green.gif'); /* Replace with your image URL */
+  /* Makes sure the image covers the entire screen */
+  background-position: center; /* Centers the image */
+ /* Prevents tiling */
+  color: var(--text);
+  font-family: 'Source Code Pro', monospace;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.box {
+  width: 40vw;
+  border: solid 8px var(--accent);
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  text-align: left;
+  margin: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+}
+
+img {
+  width: 200px;
+  height: auto;
+}
+
+@keyframes pokemonAppear {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.3);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.pokemon {
+  width: auto;
+  height: 130px;
+  animation: pokemonAppear 2s ease-out forwards;
+}
+
+button {
+  background-color: var(--accent);
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+.girl-container {
+  position: relative;
+  display: flex;
+}
+
+.girl {
+  width: 200px;
+  height: 200px;
+  animation: girlFloat 3s ease-in-out infinite;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.girl-container:hover::after {
+  content: "I LOVE Espeon :3";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--base);
+  color: var(--text);
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.background-image {
+  width: 40vw;
+  height: 40vh;
+  background-image: url('../pictures/stuff/dfjkixu-e38a6fe1-8217-441c-bbf6-4484d66e573d.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  border: solid 4px var(--green);
+  border-radius: 23px;
+  position: relative;
+}
+.abs{
+  position: absolute;
+  right: 22%;
+  
+}
+.abs img{
+ width: 120px;
+
+  
+}
+.mobile{
+  display: none;
+}
+
+@media (max-width: 600px) {
+
+  /* show */
+ .mobile {
+  display: block;
+ 
+    width: 40vw;
+    border: solid 8px var(--accent);
+    background-color: white;
+    color: black;
+    padding: 12px 20px;
+    text-align: left;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+  
+ }
+
+ /* hide */
+ .background-image{
+  display: none;
+
+}
+.abs{
+  display: none;
+}
+.box{
+  display: none;
+}
+}
