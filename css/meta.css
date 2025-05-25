@@ -14,6 +14,20 @@ body{
     color: white;
     font-family: monospace;
 }
+h1{
+    font-size: 54px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h3{
+    font-size: 27px;
+    margin: 8px;
+}
+p{
+    font-size: 28px;
+    text-decoration: underline;
+    margin: 0;
+    word-spacing: -4px;
+}
 img{
     border-radius: 23px;
     width: 30vw;
@@ -26,12 +40,22 @@ img{
 a{
     padding: 0;
     margin: 0;
+    color:  rgb(0, 191, 255);
+    text-decoration: none;
+}
+a::after{
+    color: red;
+}
+.row{
+    display: flex;
+    flex-direction: row;
 }
 .box{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 22px;
 }
 .neck{
     margin: 0;
@@ -51,3 +75,13 @@ border-top-left-radius:8px ;
 border-top-right-radius:8px ;
 
 }
+@media (max-width: 600px) {
+    .row{
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(59, 80, 80, 0.574);
+        border-radius: 8px;
+        margin: 12px;
+    }
+}
+

@@ -1,122 +1,192 @@
-
-:root{
-    --one: rgb(69, 91, 83);
-    --text:rgb(194, 143, 228);
-;
+:root {
+  --bg-main: #070c11;
+  --bg-alt: #14131c;
+  --text-main: #e6dfdf;
+  --accent: #d2a9c0;
+  --accent-hover: #4FC0D0;
+  --border: #393E46;
+  --post-bg: #1d2429;
 }
-body{
-   display: flex;
-   flex-direction: column;
-    width: 100vw;
-   
-    margin: 0;
-    padding: 0;
- 
 
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
 }
+
 a {
-    color: chartreuse;
-    text-decoration: none; /* Optional: removes underline */
-    transition: color 0.3s ease, font-size 0.3s ease; /* Smooth effects */
+  color: var(--accent);
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 a:hover {
-    font-size: 1.3em;
-    color: limegreen; /* Slightly different shade for effect */
+  font-size: 1.1em;
+  color: var(--accent-hover);
 }
 
-.page{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    color: rgb(194, 143, 228);
-    background-color:  var(--one);
-
-    width: 100vw;
-    min-height: 100vh;
+.page, .page2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 20px;
 }
 
-.page2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    color: rgb(246, 246, 246);
-    background-color: rgb(46, 35, 94);
-
-    width: 100vw;
-    min-height: 100vh;
-}
-.title{
-width: 80%;
-display: flex;
-flex-direction: row;
-align-items: center;
-text-align: center;
-justify-content: center;
-margin: 0;
-}
-.title h1 {
-    margin-bottom: 0;
+.page {
+  background-color: var(--bg-main);
 }
 
-h1{
-font-size: 2em;
-}
-img{
-    width: 20vw;
-    height: auto;
-}
-.post{
-    padding: 20px;
-    border: 4px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin:12px;
-    width: 33vw;
-    align-items: center;
-    text-align: center;
-    padding: 22px;
+.page2 {
+  background-color: var(--bg-alt);
 }
 
+nav {
+  margin-top: 20px;
+}
 
+nav a {
+  margin: 0 10px;
+  padding: 6px 12px;
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  color: var(--text-main);
+}
 
-.blinkie{
-    width: 150px;
-    height: 38px;
+nav a:hover {
+  background-color: var(--accent-hover);
+  color: #fff;
 }
-.blinkie:hover{
-    width: 400px;
-    height: 80px;
-}
-.row4{
-    display: flex;
-    flex-direction: row;
-}
-.espeon{
-height: 120px;
-width: auto;
-}
-.espeon:hover::after{
-    
-    background-color: var(--one); /* Change the background color */
-    color: var(--text);
-    content: "Click me to go back to the party";
-    position: absolute;
-    top: -8%;
-   
 
-  
-    font-size: 14px;
-    padding: 5px 10px;
-    border-radius: 4px;
-    white-space: nowrap;
-    box-shadow: 0 2px 4px rgba(146, 105, 165, 0.283);
-    
-    pointer-events: none;
+h1, h3 {
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2.4em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+.title {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.post {
+  background-color: var(--post-bg);
+  padding: 20px;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  margin: 14px;
+  width: 85%;
+  max-width: 600px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+ul {
+  padding-left: 18px;
+  text-align: left;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.espeon {
+  height: 120px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.espeon:hover {
+  transform: scale(1.08);
+}
+
+.blinkie {
+  width: 150px;
+  height: 38px;
+  transition: all 0.3s ease;
+}
+
+.blinkie:hover {
+  width: 400px;
+  height: 80px;
+}
+
+.row4 {
+  display: flex;
+  flex-direction: row;
+}
+
+.espeon:hover::after {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  content: "Click me to go back to the party";
+  position: absolute;
+  top: -8%;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  box-shadow: 0 2px 4px rgba(255,255,255,0.2);
+  pointer-events: none;
   z-index: 10;
+}
+
+p {
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+i {
+  font-style: italic;
+}
+
+b {
+  font-weight: 600;
+}
+/* Existing CSS — keep everything you already have */
+
+/* Fade In Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0; /* Start invisible, animate to visible */
+}
+
+/* Optional stagger effect */
+.page .post:nth-child(2) { animation-delay: 3s; }
+.page .post:nth-child(3) { animation-delay: 3s; }
+.page .post:nth-child(4) { animation-delay: 7s; }

@@ -1,6 +1,6 @@
 :root {
-  --text: #c7c2e6;
-  --base: #112;
+  --text: #4a5475;
+  --base: rgb(45, 45, 53);
   --accent: rgb(168, 174, 206);
   --secondary: rgb(76, 107, 157);
   --green: rgb(93, 111, 93);
@@ -22,7 +22,24 @@ body {
   align-items: center;
   text-align: center;
 }
-
+.textbox {
+  width: 80%;
+  max-width: 500px;
+  
+  max-height: 200px;
+  background: white;
+  border: 3px solid black;
+  padding: 10px;
+  font-family: 'Source Code Pro', monospace;
+  text-align: left;
+  cursor: pointer;
+  margin: 20px auto;
+  box-shadow: 4px 4px 0 black;
+  color: var(--text);
+}
+.hidden {
+  display: none;
+}
 .row {
   display: flex;
   justify-content: center;
@@ -71,11 +88,11 @@ img {
 }
 
 button {
-  background-color: var(--accent);
+  background-color: var(--text);
   border: none;
-  padding: 10px 20px;
+  padding: 16px 20px;
   margin: 10px;
-  color: white;
+  color: black;
   font-size: 16px;
   border-radius: 8px;
   cursor: pointer;
@@ -105,7 +122,7 @@ button a {
   top: -30px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: var(--base);
+  background-color: white;
   color: var(--text);
   font-size: 12px;
   padding: 5px 10px;
@@ -128,7 +145,7 @@ button a {
   flex-direction: column;
   justify-content: end;
   align-items: center;
-  border: solid 4px var(--green);
+  border: solid 4px  black;
   border-radius: 23px;
   position: relative;
 }
@@ -179,4 +196,5 @@ button a {
 .btnn{
   display: none;
 }
+
 }

@@ -8,59 +8,81 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <style>
+    .textbox {
+      width: 80%;
+      max-width: 500px;
+      background: white;
+      border: 3px solid black;
+      padding: 10px;
+      font-family: 'Source Code Pro', monospace;
+      text-align: center;
+      cursor: pointer;
+      margin: 20px auto;
+      box-shadow: 4px 4px 0 black;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
 </head>
 <body>
   <div class="background-image">
- 
     <img src="./blinkie/14chibimon.gif" alt="Chibimon">
     <div class="row girl-container">
       <a href="./m.meta.html">
-          <img src="./pictures/girl pics/dudee.png" class="girl" alt="Girl"></a>
+        <img src="./pictures/girl pics/dudee.png" class="girl" alt="Girl">
+      </a>
       <img id="pokemon" class="pokemon" src="" alt="Random Pokémon">
     </div>
-  
   </div>
- 
-    <div class="mobile">
-      <p>oh... Looks like your on your  phone</p>
-      <p>I made my site mostly for desktop but its still ok on mobile</p>
-      <p>take this way instead ⬇️</p>
-      <a href="./m.backrooms.html">
-        <button>mobile way </button>
-      </a>
-    </div>
-  
-  <div class="box">
-    <p>Oh you found my website... </p>
+
+  <div class="textbox" onclick="nextText()">Oh you found my website...<i>(click to continue)</i> </div>
+
+  <div class="row hidden" id="buttons">
+    <button class="btnn"><a href="./index2.html">
+      <img src="./blinkie/14chibimon.gif" alt="">
+    </a></button>
+    <!-- <button class="btnn"><a href="./m.linksout.html">Leave</a></button> -->
   </div>
-  <div class="row">
-    <button class="btnn"><a href="./index2.html">Enter Website </a></button>
-    <button class="btnn"><a href="./m.linksout.html">leave</a></button>
-  </div>
+
   <div class="abs">
     <a target="_blank" href="https://www.mabsland.com/Adoption.html">
-    <img src="./pictures/stuff/Censor_14a.gif" alt="">
+      <img src="./pictures/stuff/Censor_14a.gif" alt="">
     </a>
-   </div>
+  </div>
+
   <script>
-    // Array of Pokémon image URLs
+    //loops though images on load
     const pokemonImages = [
       'pictures/pokemon/dragonite.gif',
       'pictures/pokemon/drifblim.gif',
       'pictures/pokemon/espeon.gif',
       'pictures/pokemon/roserade-f.gif',
       'pictures/pokemon/volcarona.gif',
-      'pictures/pokemon/hydreigon.gif',
-      
-
+      'pictures/pokemon/hydreigon.gif'
     ];
-
-     // Select a random Pokémon image
     const randomPokemon = pokemonImages[Math.floor(Math.random() * pokemonImages.length)];
 
-      // Set the Pokémon image source
-    const pokemonElement = document.getElementById('pokemon');
-    pokemonElement.src = randomPokemon;
+    document.getElementById('pokemon').src = randomPokemon;
+
+    // text box js
+    const texts = [
+      "Have thougts? tell me on the guest book on the links out page",
+      "Theres some cool stuff here ... i think  ",
+      "Heres the front page ⤵️", 
+      "you clicked again? on accident? ",
+      "def not an accidednt ... ",
+      "Click on me"
+    ];
+
+    
+    let textIndex = 0;
+    function nextText() {
+      textIndex = (textIndex + 1) % texts.length;
+      document.querySelector('.textbox').innerText = texts[textIndex];
+      document.getElementById('buttons').classList.toggle('hidden', textIndex !== 2);
+    }
   </script>
 </body>
 </html>

@@ -1,94 +1,155 @@
 :root {
-  --primary: #5D3FD3; /* Deep Purple */
-  --secondary: #1b1a13; /* Soft Yellow */
-  --text-color: #485325;
-  --hover-color: #FF4500; /* Bright Orange */
+  --primary: #422de2;
+  --secondary: #121212;
+  --accent: #FF6F61;
+  --text: #E5E5E5;
+  --card-bg: #1E1E1E;
+  --hover: #FF4500;
 }
 
-html, body {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
   background-color: var(--secondary);
-  font-family: Arial, sans-serif;
-  text-align: center;
-  color: var(--text-color);
-}
-ul{
-  list-style-type: none;
-  
-
-}
-a {
-  color: var(--primary);
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
+  color: var(--text);
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
 }
 
-a:hover {
-  color: var(--hover-color);
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
 }
 
-#header {
-  background-color: var(--primary);
-  color: white;
-  padding: 15px;
-  text-align: center;
-  font-size: 1.5rem;
-  height: 20vh;
-  border-radius: 23px;
-}
-
-#container {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 15px;
-}
-
-#navigation, #extra {
-  flex: 1 1 200px;
-  background: var(--secondary);
-  padding: 10px;
-}
-
-#content {
-  flex: 3 1 500px;
-  padding: 15px;
-}
-
-#footer {
+.header {
+  grid-column: 1 / -1;
   background: var(--primary);
-  color: rgb(137, 42, 42);
-  text-align: left;
-  padding: 10px;
+  text-align: center;
+  padding: 30px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.header h1 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+.pokemon {
+  height: 90px;
+  animation: float 6s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(20px); }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.card h2 {
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.card ul {
+  list-style: none;
+}
+
+.card li {
+  margin: 8px 0;
+}
+
+.card a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.card a:hover {
+  color: var(--hover);
+}
+
+.sidebar {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.sidebar h2 {
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin: 10px 0;
+}
+
+.sidebar a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  color: var(--hover);
+}
+
+.blinkies img {
+  width: auto;
+  height: 40px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.footer {
+  grid-column: 1 / -1;
+  background: var(--primary);
+  text-align: center;
+  padding: 15px;
+  border-radius: 12px;
   margin-top: 20px;
 }
-.pokemon{
-  height: 100px;
-  width: auto;
-  animation: fly 10s infinite ;
-  
+
+.footer a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: bold;
 }
-@keyframes fly {
-  0%, 100%{transform: translatey(30px);}
-  50%{transform: translatey(200px);}
-  75%{transform: translatey(800px);}
-  90%{transform: translatey(240px)}
+
+.footer a:hover {
+  color: var(--hover);
 }
+
 /* Mobile Responsive */
-@media (max-width: 768px) {
-  #container {
-    flex-direction: column;
-    text-align: center;
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
   }
 
-  #navigation, #extra {
-    flex: 1 1 100%;
-  }
-  .pokemon{
+  .pokemon {
     display: none;
   }
 }
