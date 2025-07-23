@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,24 +9,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-  <style>
-    .textbox {
-      width: 80%;
-      max-width: 500px;
-      background: white;
-      border: 3px solid black;
-      padding: 10px;
-      font-family: 'Source Code Pro', monospace;
-      text-align: center;
-      cursor: pointer;
-      margin: 20px auto;
-      box-shadow: 4px 4px 0 black;
-    }
-    .hidden {
-      display: none;
-    }
-  </style>
+
 </head>
+
 <body>
   <div class="background-image">
     <img src="./blinkie/14chibimon.gif" alt="Chibimon">
@@ -36,13 +22,14 @@
       <img id="pokemon" class="pokemon" src="" alt="Random Pokémon">
     </div>
   </div>
+ <img  src="./pictures/girl pics/dudee.png" class=" mobile" alt="Girl">
 
   <div class="textbox" onclick="nextText()">Oh you found my website...<i>(click to continue)</i> </div>
 
   <div class="row hidden" id="buttons">
     <button class="btnn"><a href="./index2.html">
-      <img src="./blinkie/14chibimon.gif" alt="">
-    </a></button>
+        <img src="./blinkie/14chibimon.gif" alt="">
+      </a></button>
     <!-- <button class="btnn"><a href="./m.linksout.html">Leave</a></button> -->
   </div>
 
@@ -68,15 +55,15 @@
 
     // text box js
     const texts = [
-      "Have thougts? tell me on the guest book on the links out page",
-      "Theres some cool stuff here ... i think  ",
-      "Heres the front page ⤵️", 
+      "you should look at my site on desktop ",
+      "Theres some cool stuff here ...   ",
+      "Heres the front page ⤵️",
       "you clicked again? on accident? ",
-      "def not an accidednt ... ",
-      "Click on me"
+      "Click on me (secret page )",
+      " if your on mobile it wont work "
     ];
 
-    
+
     let textIndex = 0;
     function nextText() {
       textIndex = (textIndex + 1) % texts.length;
@@ -85,4 +72,5 @@
     }
   </script>
 </body>
+
 </html>
