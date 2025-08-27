@@ -280,18 +280,7 @@ iframe {
   border-radius: 12px;
 }
 .box1 {
-  margin: 18px;
-
-  border-width: 10px;
-  border-style: solid;
-  border-image: var(--lace) 8 fill round;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 70vh;
-  width: 80vw;
-  padding: 0;
+display: none;
 }
 .mobile {
   display: none;
@@ -302,20 +291,22 @@ iframe {
   }
 
   .box1 {
+    display: block;
     width: 60vw;
+    height: 90lvh;
     border: solid 8px var(--accent);
     background-color: white;
-    color: black;
+    color: var(--accent)
     padding: 12px 20px;
-    text-align: left;
+    text-align: center;
     margin: 10px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     font-size: 18px;
   }
   iframe{
-    width: 90%;
-    height: 99%;
+    width: 96%;
+    height: 80%;
     border: none;
     border-radius: 12px;
 }

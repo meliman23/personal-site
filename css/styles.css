@@ -1,9 +1,9 @@
 :root {
-  --text: #ab9ff0;
-  --base: rgb(62, 58, 81);
-  --accent: rgb(234, 162, 162);
-  --secondary:rgb(31, 66, 146);
-  --green:rgb(93, 111, 93);
+  --text: rgb(186, 177, 236);
+  --base: rgb(67, 74, 82);
+  --accent: rgb(248, 173, 232);
+  --secondary:rgb(40, 38, 51);
+  --green:rgb(69, 107, 69);
 
 }
 /* cursor */
@@ -13,19 +13,24 @@
 
 body {
  
-  font-family: Arial, sans-serif;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin: 0;
   min-height: 100vh;
   width: 100vw; 
-
   display: flex;
   flex-direction: column;
   scroll-behavior: smooth; /* Smooth scrolling between sections */
  align-items: center;
-  background-color: rgb(31, 38, 54);
+  background-color: var(--secondary);
   color: var(--text);
   overflow-x: hidden;
 
+}
+ul{
+  list-style-type: none;
+}
+li{
+  margin: 6px;
 }
 p {
   padding: 0;
@@ -48,17 +53,20 @@ nav{
 
 nav a {
  
-  color: var(--accent);
+  color: var(--text);
   text-decoration: none;
 }
+a{
+  color: var(--accent);
+}
 a:hover{
-  color: rgb(214, 162, 171);
+  color: var(--green);
 }
 nav a:hover::before{
   
   color: var(--base);
    text-decoration: none;
-  color: pink;
+  
   content: "🌸";  /* Custom bullet */
   margin-right: 2px;  /* Adds space between bullet & text */
 }
@@ -92,7 +100,7 @@ a{
 
   
   width: 100vw;
-
+height: 100vh;
 }
 .bottom{
   display: flex;
@@ -134,10 +142,6 @@ a{
 h1 {
   margin: 20px 0;
 }
-
-
-
-
 
 /* Spin animation */
 @keyframes spinny {
@@ -267,11 +271,11 @@ hr.expand {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  color: pink;
+  color: var(--text);
 }
 .time{
   font-weight: bold;
-  color: rgb(238, 103, 126);
+  color: var(--text);
 }
 
 .blinkie {
@@ -305,7 +309,7 @@ hr.expand {
   left: 50%; /* Center horizontally */
   transform: translateX(-50%);
   background-color: var(--secondary); /* Semi-transparent black background */
-  color: var(--text); /* White text */
+  color: var(--text); 
   font-size: 12px; /* Tooltip text size */
   padding: 5px 10px; /* Add some padding around the text */
   border-radius: 4px; /* Rounded corners for the tooltip */
@@ -317,10 +321,6 @@ hr.expand {
   transition: opacity 0.3s ease; /* Smooth tooltip appearance */
 }
 
-/* Show tooltip on hover */
-.blinkie:hover::after {
-  opacity: 1; /* Make tooltip visible */
-}
 
 
 .row .trainer{
@@ -495,21 +495,21 @@ animation: fly 10s infinite ease ;
     flex-direction: column;
     scroll-behavior: smooth; /* Smooth scrolling between sections */
     align-items: center;
-    background-color: pink;
-    color: rgb(55, 98, 136);
+    background-color: var(--accent);
+    color: var(--secondary);
 
   }
   .top{
     background-color: var(--green);
   }
     a{
-      color: var(--base);
+      color: var(--green);
      margin: 8px 8px;
      padding: 8px 8px;
      
     }
   .links a{
-      background-color: var(--green);
+      background-color: var(--secondary);
      border-radius: 12px;
      display: flex;
      justify-content: center;
@@ -518,8 +518,15 @@ animation: fly 10s infinite ease ;
   .container {
     flex-direction: column;
     gap: 20px;
-    color: pink;
+    color: var(--base);
     
+  }
+  .bouncy span{
+    color:var(--accent);
+
+  }
+  .expand{
+    background-color: var(--secondary);
   }
   
   @keyframes fly {
@@ -532,7 +539,7 @@ animation: fly 10s infinite ease ;
   /* show */
   .mobile{
     display: block;
-    color: pink;
+    color: var(--text);
     padding: 8px;
    border-radius: 12px;
     background-color: var(--green);
@@ -549,9 +556,7 @@ animation: fly 10s infinite ease ;
     border: solid 4px var(--green);
   }
   /* none */
-  .stamp{
-    display: none;
-  }
+
   .pokemon{
     display: none;
   }
