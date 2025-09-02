@@ -9,7 +9,7 @@
       margin: 0;
       padding: 0;
       overflow: hidden;
-      background: black;
+      background: rgb(165, 184, 202);
     }
     canvas {
       display: block;
@@ -52,8 +52,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script>
     let scene = new THREE.Scene();
-    let camera = new THREE.PerspectiveCamera(40, window.innerWidth/window.innerHeight, 0.1, 2000);
-    camera.position.z = 3;
+    let camera = new THREE.PerspectiveCamera(10, window.innerWidth/window.innerHeight, 0.1, 2000);
+    camera.position.z = 9;
 
     let renderer = new THREE.WebGLRenderer({antialias: true});
     renderer.setSize(window.innerWidth, window.innerHeight);
@@ -61,7 +61,7 @@
 
     // Galaxy material
     let geometry = new THREE.BufferGeometry();
-    let numStars = 24900;
+    let numStars = 28900;
     let positions = new Float32Array(numStars * 6);
     let colors = new Float32Array(numStars * 9);
     for (let i = 0; i < numStars; i++) {
@@ -85,7 +85,7 @@
     geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
     geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
 
-    let material = new THREE.PointsMaterial({ size: 0.5, vertexColors: true });
+    let material = new THREE.PointsMaterial({ size: 4, vertexColors: true });
     let points = new THREE.Points(geometry, material);
     scene.add(points);
 
@@ -96,12 +96,16 @@
       let t = clock.getElapsedTime();
 
       // Move camera through a smooth orbit inward
-      camera.position.x = Math.sin(t * 0.1) * 19 ;
-      camera.position.y = Math.cos(t * 0.02) *20
-      camera.position.z = Math.cos(t * 0.1) * 300 ;
+     
+      camera.position.x = Math.sin(t * .5) * 30 ;
+       
+      camera.position.y = Math.cos(t * .1) * 50 ;
+
+      //in and out
+      camera.position.z = Math.cos(t * .2) * 350 ;
       camera.lookAt(0, 0, 0);
 
-      points.rotation.y += 0.005;
+      points.rotation.y += 0.002;
       renderer.render(scene, camera);
     }
     animate();
