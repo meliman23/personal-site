@@ -2,6 +2,8 @@
     --green:rgb(73, 94, 111);
     --background:rgba(59, 55, 105, 0.323);
     --purp:rgb(68, 57, 90);
+    --accent:rgb(142, 189, 158);
+
 
 }
 
@@ -14,6 +16,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+h3{
+    font-size: 18px;
+    text-decoration: underline;
+    color: var(--accent) ;
 }
 .para p{
     max-width: 50%;
@@ -185,7 +192,7 @@ button:hover{
 }
 .mood{
     width: 99%;
-    height: 60%;
+    height: 90%;
     
 }
 

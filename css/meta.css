@@ -1,36 +1,57 @@
 :root{
     --blue:rgb(21, 25, 45);
+    --one: rgb(64, 98, 107);
 }
 body{
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    overflow-x: hidden;
     width: 100vw;
     justify-content: center;
     align-items: center;
     background-image: url('../pictures/stuff/bck-starnight\ black.gif'); 
     background-position: center;
     background-size: cover; /* Ensures the image covers the full screen */
-    color: white;
+    color: rgb(215, 214, 221);
     font-family: monospace;
+}
+section{
+    background-color:  rgb(64, 98, 107);
+    width: 70vw;
+
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 h1{
     font-size: 54px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
 }
 h3{
     font-size: 27px;
     margin: 8px;
+    background-color: #2c283a;
+    padding: 8px;
+    border-radius: 4px;
+    text-align: center;
+
 }
 p{
-    font-size: 28px;
-    text-decoration: underline;
-    margin: 0;
-    word-spacing: -4px;
+    font-size: 16px;
+ 
+}
+li{
+    font-size: 16px;
 }
 img{
     border-radius: 23px;
-    width: 30vw;
+    
+    max-width: 400px;
     height: 30vh;
     padding: 8px;
     background: #ffffff;
@@ -43,8 +64,9 @@ a{
     color:  rgb(0, 191, 255);
     text-decoration: none;
 }
-a::after{
+a:hover{
     color: red;
+    transition: ease 1s;
 }
 .row{
     display: flex;
@@ -55,7 +77,8 @@ a::after{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 22px;
+   
+    
 }
 .neck{
     margin: 0;
@@ -75,13 +98,23 @@ border-top-left-radius:8px ;
 border-top-right-radius:8px ;
 
 }
+.con{
+    border: solid rgb(64, 98, 107) 2px;
+    background-color: rgb(64, 98, 107);
+    border-radius: 4px;
+    padding: 12px 20px;
+    max-width: 600px;
+    text-align: left;
+
+
+}
 @media (max-width: 600px) {
     .row{
         display: flex;
         flex-direction: column;
         background-color: rgba(59, 80, 80, 0.574);
         border-radius: 8px;
-        margin: 12px;
+   
     }
 }
 

@@ -25,18 +25,35 @@
       z-index: 10;
       box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
     }
+    #links{
+      position: absolute;
+      bottom:20px;
+      right:20px;
+    }
+    @media (max-width: 600px) {
+      #links{
+        display: none;
+      }
+      #spotify{
+        display: none;
+      }
+    }
   </style>
 </head>
 <body>
   <div id="spotify">
     <!-- Replace this src with your own embed -->
-   <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6h6runZeeczWEuEW2pFvYW?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+   <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6h6runZeeczWEuEW2pFvYW?utm_source=generator&theme=0"
+    width="100%" height="100%" frameBorder="0" 
+    allowfullscreen="" 
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+     loading="lazy"></iframe>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script>
     let scene = new THREE.Scene();
-    let camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 2000);
-    camera.position.z = 20;
+    let camera = new THREE.PerspectiveCamera(40, window.innerWidth/window.innerHeight, 0.1, 2000);
+    camera.position.z = 3;
 
     let renderer = new THREE.WebGLRenderer({antialias: true});
     renderer.setSize(window.innerWidth, window.innerHeight);
@@ -44,21 +61,21 @@
 
     // Galaxy material
     let geometry = new THREE.BufferGeometry();
-    let numStars = 20000;
-    let positions = new Float32Array(numStars * 3);
-    let colors = new Float32Array(numStars * 3);
+    let numStars = 24900;
+    let positions = new Float32Array(numStars * 6);
+    let colors = new Float32Array(numStars * 9);
     for (let i = 0; i < numStars; i++) {
       let radius = Math.random() * 100;
       let angle = Math.random() * Math.PI * 2;
-      let spiral = radius * 0.5;
+      let spiral = radius * 0.07;
 
-      let x = Math.cos(angle) * radius + (Math.random() - 0.5) * 10;
+      let x = Math.cos(angle) * radius + (Math.random() - 0.5) * 20;
       let y = (Math.random() - 0.5) * 20;
-      let z = Math.sin(angle) * radius + (Math.random() - 0.5) * 10;
+      let z = Math.sin(angle) * radius + (Math.random() - 0.5) * 20;
 
       positions[i * 3] = x;
       positions[i * 3 + 1] = y;
-      positions[i * 3 + 2] = z;
+      positions[i * 3 + 5] = z;
 
       colors[i * 3] = 0.7 + Math.random() * 0.3;
       colors[i * 3 + 1] = 0.5 + Math.random() * 0.5;
@@ -68,7 +85,7 @@
     geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
     geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
 
-    let material = new THREE.PointsMaterial({ size: 0.7, vertexColors: true });
+    let material = new THREE.PointsMaterial({ size: 0.5, vertexColors: true });
     let points = new THREE.Points(geometry, material);
     scene.add(points);
 
@@ -79,9 +96,9 @@
       let t = clock.getElapsedTime();
 
       // Move camera through a smooth orbit inward
-      camera.position.x = Math.sin(t * 0.2) * 22 + 8;
-      camera.position.y = Math.cos(t * 0.15) * 50;
-      camera.position.z = Math.cos(t * 0.2) * 12 - 6;
+      camera.position.x = Math.sin(t * 0.1) * 19 ;
+      camera.position.y = Math.cos(t * 0.02) *20
+      camera.position.z = Math.cos(t * 0.1) * 300 ;
       camera.lookAt(0, 0, 0);
 
       points.rotation.y += 0.005;
