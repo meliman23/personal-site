@@ -8,32 +8,45 @@
     body {
       margin: 0;
       padding: 0;
-      overflow: hidden;
-      background: rgb(165, 184, 202);
+      overflow: hidden;font-family: Arial, Helvetica, sans-serif;
+    
     }
     canvas {
       display: block;
     }
     #spotify {
-      position: absolute;
-      bottom: 20px;
-      left: 20px;
+      
       width: 300px;
       height: 80px;
       border-radius: 12px;
-      overflow: hidden;
+    margin: 8px;
       z-index: 10;
       box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
     }
-    #links{
+    #box{
       position: absolute;
-      bottom:20px;
-      right:20px;
+        top:20px;
+      right:50%;
     }
+    .con{
+
+      display: flex;
+      flex-direction: column;
+      color: wheat;
+      background-color: black;
+      width: 300px;
+      height: 100px;
+      padding: 14px;
+      border-radius: 12px;
+      border: 3px solid pink;
+      text-align-last: center;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      scrollbar-width: none;
+    }
+   
     @media (max-width: 600px) {
-      #links{
-        display: none;
-      }
+    
       #spotify{
         display: none;
       }
@@ -41,14 +54,24 @@
   </style>
 </head>
 <body>
-  <div id="spotify">
+  <div id="box">
+    <div class="con">
+        <h3>Hi ,im scorllable</h3>
+        <p>heres some music</p>
+<div id="spotify">
     <!-- Replace this src with your own embed -->
    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6h6runZeeczWEuEW2pFvYW?utm_source=generator&theme=0"
     width="100%" height="100%" frameBorder="0" 
     allowfullscreen="" 
     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-     loading="lazy"></iframe>
+     loading="lazy">
+    </iframe>
+    </div>
+  <p>cool galexy huh.. yea i found someones then made my own kinda i hope you dont get dissy</p>
+  <p>heres the way <a href="./a.blinkie.html">out</a></p>
   </div>
+  </div>
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script>
     let scene = new THREE.Scene();
