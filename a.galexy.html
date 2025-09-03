@@ -9,8 +9,9 @@
       margin: 0;
       padding: 0;
       overflow: hidden;font-family: Arial, Helvetica, sans-serif;
-    
+    position: relative;
     }
+    h3{margin-bottom: 100px;}
     canvas {
       display: block;
     }
@@ -25,8 +26,8 @@
     }
     #box{
       position: absolute;
-        top:20px;
-      right:50%;
+        bottom:20px;
+      right:150px;
     }
     .con{
 
@@ -47,8 +48,10 @@
    
     @media (max-width: 600px) {
     
-      #spotify{
-        display: none;
+      #box{
+        position: absolute;
+        right: 20px;
+        top: 300px;
       }
     }
   </style>
@@ -56,8 +59,11 @@
 <body>
   <div id="box">
     <div class="con">
-        <h3>Hi ,im scorllable</h3>
-        <p>heres some music</p>
+      <h3>Hi ,im scorllable</h3>
+      <h1><span style="color: gold;">29,220 stars</span></h1>
+      <p>aka 29k days or 80 years</p>
+      
+        <p>heres some music like always </p>
 <div id="spotify">
     <!-- Replace this src with your own embed -->
    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6h6runZeeczWEuEW2pFvYW?utm_source=generator&theme=0"
@@ -69,6 +75,9 @@
     </div>
   <p>cool galexy huh.. yea i found someones then made my own kinda i hope you dont get dissy</p>
   <p>heres the way <a href="./a.blinkie.html">out</a></p>
+  <p>but yea... this is what life looks like on averge </p>
+  <p>the people who make it to 29k are "lucky"</p>
+  <p>-me 09/2025</p>
   </div>
   </div>
   
@@ -76,7 +85,7 @@
   <script>
     let scene = new THREE.Scene();
     let camera = new THREE.PerspectiveCamera(10, window.innerWidth/window.innerHeight, 0.1, 2000);
-    camera.position.z = 9;
+    camera.position.z = 2;
 
     let renderer = new THREE.WebGLRenderer({antialias: true});
     renderer.setSize(window.innerWidth, window.innerHeight);
@@ -84,7 +93,7 @@
 
     // Galaxy material
     let geometry = new THREE.BufferGeometry();
-    let numStars = 28900;
+    let numStars = 29220;
     let positions = new Float32Array(numStars * 6);
     let colors = new Float32Array(numStars * 9);
     for (let i = 0; i < numStars; i++) {
@@ -120,12 +129,12 @@
 
       // Move camera through a smooth orbit inward
      
-      camera.position.x = Math.sin(t * .5) * 30 ;
+      camera.position.x = Math.sin(t * .1) * 730 ;
        
-      camera.position.y = Math.cos(t * .1) * 50 ;
+      camera.position.y = Math.cos(t * .08) * 90 ;
 
       //in and out
-      camera.position.z = Math.cos(t * .2) * 350 ;
+      camera.position.z = Math.cos(t * .2) * 50 ;
       camera.lookAt(0, 0, 0);
 
       points.rotation.y += 0.002;

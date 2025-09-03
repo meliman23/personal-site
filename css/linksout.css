@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  scrollbar-width: none;
 }
 
 :root {
@@ -296,7 +297,7 @@ display: none;
     height: 90lvh;
     border: solid 8px var(--accent);
     background-color: white;
-    color: var(--accent)
+    color: var(--accent);
     padding: 12px 20px;
     text-align: center;
     margin: 10px;

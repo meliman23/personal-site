@@ -17,6 +17,7 @@ body {
   font-family: 'Outfit', sans-serif;
   background-color: var(--bg-main);
   color: var(--text-main);
+  scrollbar-width: none;
 }
 
 a {

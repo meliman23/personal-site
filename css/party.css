@@ -17,6 +17,17 @@ body{
     color: var(--text);
     position: relative;
 }
+iframe{
+    margin-bottom: 12px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+h2{padding: 12px;
+display: flex;text-align: center;
+width: 200px;}
 a{
     width: auto;
 }
@@ -58,13 +69,51 @@ img{
     pointer-events: none;
   z-index: 10;
   }
+  .purp:hover::after{
+    
+    background-color: var(--blue); /* Change the background color */
+    color: var(--text);
+    content: "follow me to the backrooms :)";
+    position: absolute;
+    top: -8%;
+   
+    transform: translateX(-50%);
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(146, 105, 165, 0.283);
+    
+    pointer-events: none;
+  z-index: 10;
+  }
+  .vol:hover::after{
+    
+    background-color: var(--blue); /* Change the background color */
+    color: var(--text);
+    content: "follow me to link library :)";
+    position: absolute;
+    top: -8%;
+   
+    transform: translateX(-50%);
+  
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(146, 105, 165, 0.283);
+    
+    pointer-events: none;
+  z-index: 10;
+  }
+  
 .pos{
     display: flex;
    
     flex-direction: row;
     position:absolute;
     top: 50%;
-    left: 50%;
+    left: 5%;
  
  
 }
@@ -74,6 +123,7 @@ img{
     top: 50%;
     width: 10vw;
     height: auto;
+    
 }
 .statue{
     position:absolute;
@@ -82,4 +132,14 @@ img{
     width: auto;
     height: 40%;
 
+}
+.mobile{display: none;}
+@media (max-width: 600px) {
+.cat{ display: none;}
+.pos{display: none;}
+.statue{display: none;}
+.mobile{display: block;
+text-align: center;}
+.box{display: none;}
+ .row{display: none;}
 }
