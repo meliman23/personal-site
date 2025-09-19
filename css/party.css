@@ -1,9 +1,10 @@
-:root{
-    --blue:rgb(26, 23, 53);
-    --red:rgb(137, 58, 27);
-    --text:antiquewhite;
+:root {
+    --blue: rgb(27, 25, 43);
+    --red: rgb(183, 190, 81);
+    --text: antiquewhite;
 }
-body{
+
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,26 +18,33 @@ body{
     color: var(--text);
     position: relative;
 }
-iframe{
-    margin-bottom: 12px;
-}
-.row{
+
+.row {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 32px;
 }
-h2{padding: 12px;
-display: flex;text-align: center;
-width: 200px;}
-a{
+
+h2 {
+    padding: 12px;
+    display: flex;
+    text-align: center;
+    width: 200px;
+}
+
+a {
     width: auto;
+    position: relative;
+    /* so tooltips attach properly */
 }
-.box{
-    background-image: url("../pictures/stuff/kamihouse.jpeg");
-    background-size: cover; /* Cover entire div */
-    background-position: center; /* Center image */
-    background-repeat: no-repeat; /* Prevent repetition */
-    border: solid 14px var(--red);
+
+.box {
+    background-image: url("../pictures/backgrounds/kamihouse.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: solid 8px var(--red);
     border-radius: 23px;
     width: 70vw;
     height: 30vw;
@@ -44,102 +52,95 @@ a{
     display: flex;
 }
 
-img{
+img {
     height: 24%;
     width: auto;
     margin: 0;
     padding: 0;
 }
-.espeon:hover::after{
-    
-    background-color: var(--blue); /* Change the background color */
+
+/* --- tooltips --- */
+.espeon:hover::after,
+.purp:hover::after,
+.vol:hover::after {
+    background-color: var(--blue);
     color: var(--text);
+    position: absolute;
+    top: -8%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(146, 105, 165, 0.283);
+    pointer-events: none;
+    z-index: 10;
+}
+
+.espeon:hover::after {
     content: "follow me to the blog :)";
-    position: absolute;
-    top: -8%;
-   
-    transform: translateX(-50%);
-  
-    font-size: 14px;
-    padding: 5px 10px;
-    border-radius: 4px;
-    white-space: nowrap;
-    box-shadow: 0 2px 4px rgba(146, 105, 165, 0.283);
-    
-    pointer-events: none;
-  z-index: 10;
-  }
-  .purp:hover::after{
-    
-    background-color: var(--blue); /* Change the background color */
-    color: var(--text);
+}
+
+.purp:hover::after {
     content: "follow me to the backrooms :)";
-    position: absolute;
-    top: -8%;
-   
-    transform: translateX(-50%);
-    font-size: 14px;
-    padding: 5px 10px;
-    border-radius: 4px;
-    white-space: nowrap;
-    box-shadow: 0 2px 4px rgba(146, 105, 165, 0.283);
-    
-    pointer-events: none;
-  z-index: 10;
-  }
-  .vol:hover::after{
-    
-    background-color: var(--blue); /* Change the background color */
-    color: var(--text);
+}
+
+.vol:hover::after {
     content: "follow me to link library :)";
-    position: absolute;
-    top: -8%;
-   
-    transform: translateX(-50%);
-  
-    font-size: 14px;
-    padding: 5px 10px;
-    border-radius: 4px;
-    white-space: nowrap;
-    box-shadow: 0 2px 4px rgba(146, 105, 165, 0.283);
-    
-    pointer-events: none;
-  z-index: 10;
-  }
-  
-.pos{
+}
+
+/* --- positioned characters --- */
+.pos {
     display: flex;
-   
     flex-direction: row;
-    position:absolute;
+    position: absolute;
     top: 50%;
     left: 5%;
- 
- 
 }
-.cat{
-    position:absolute;
-    right:0;
+
+.cat {
+    position: absolute;
+    right: 0;
     top: 50%;
     width: 10vw;
     height: auto;
+}
+
+.statue {
+    position: absolute;
+    left: 10px;
+    top: 30%;
+    width: auto;
     
 }
-.statue{
-    position:absolute;
-    left:10%;
-    top: 50%;
-    width: auto;
-    height: 40%;
 
+/* --- mobile section --- */
+.mobile {
+    display: none;
 }
-.mobile{display: none;}
+
 @media (max-width: 600px) {
-.cat{ display: none;}
-.pos{display: none;}
-.statue{display: none;}
-.mobile{display: block;
-text-align: center;}
-.box{display: none;}
- .row{display: none;}
+    body {
+        background-color: rgb(36, 65, 43);
+    }
+
+    .show,
+    .cat,
+    .pos,
+    .statue,
+    .box {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        text-align: center;
+        max-width: 90vw;
+    }
+
+    p {
+        padding: 12px;
+        margin: 12px;
+    }
 }

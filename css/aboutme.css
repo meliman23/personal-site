@@ -11,7 +11,7 @@
     scrollbar-width: none;
 }
 body {
-    background-image: url('../pictures/stuff/bck-starnight\ black.gif'); 
+    background-image: url('../pictures/backgrounds/bck-starnight\ black.gif'); 
     background-position: center;
     background-size: cover; /* Ensures the image covers the full screen */
     margin: 0;

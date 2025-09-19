@@ -1,6 +1,6 @@
 :root{
     --blue:rgb(21, 25, 45);
-    --one: rgb(64, 98, 107);
+    --one: rgb(2, 23, 29);
 }
 body{
     box-sizing: border-box;
@@ -10,14 +10,14 @@ body{
     width: 100vw;
     justify-content: center;
     align-items: center;
-    background-image: url('../pictures/stuff/bck-starnight\ black.gif'); 
+    background-image: url('../pictures/backgrounds/bck-starnight\ black.gif'); 
     background-position: center;
-    background-size: cover; /* Ensures the image covers the full screen */
+    /* Ensures the image covers the full screen */
     color: rgb(215, 214, 221);
     font-family: monospace;
 }
 section{
-    background-color:  rgb(64, 98, 107);
+    background-color:  rgb(11, 21, 24);
     width: 70vw;
 
     padding: 12px;
@@ -32,10 +32,13 @@ h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   
 }
+hr{
+    width: 80%;
+}
 h3{
     font-size: 27px;
     margin: 8px;
-    background-color: #2c283a;
+    background-color: #9c91c2;
     padding: 8px;
     border-radius: 4px;
     text-align: center;
@@ -61,11 +64,11 @@ img{
 a{
     padding: 0;
     margin: 0;
-    color:  rgb(0, 191, 255);
+    color:  var(red);
     text-decoration: none;
 }
 a:hover{
-    color: red;
+    color: rgb(243, 191, 204);
     transition: ease 1s;
 }
 .row{
@@ -104,9 +107,11 @@ border-top-right-radius:8px ;
     border-radius: 4px;
     padding: 12px 20px;
     max-width: 600px;
+    text-align: center;
+}
+.txt{
+   
     text-align: left;
-
-
 }
 @media (max-width: 600px) {
     .row{
@@ -116,5 +121,6 @@ border-top-right-radius:8px ;
         border-radius: 8px;
    
     }
+    .box{display: none;}
 }
 

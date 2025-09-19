@@ -60,11 +60,11 @@ body {
   display: flex;
   justify-content: start;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #201e2c;
   background-repeat: repeat;
   background-position: 0 0;
   background-attachment: fixed;
-  color: #7053d0; /* default font color */
+  color: #66963e; /* default font color */
   font-family: "MS Gothic"; /* default font */
   font-size: 20px; /* default font size */
   padding: 10px;
@@ -115,8 +115,8 @@ a:hover {
 .container {
   display: grid;
 
-  width: 80vw;
-  height: 80vh;
+  width: 90vw;
+  height: 90vh;
   grid-template-columns: 250px minmax(0, 1fr) minmax(0, 1fr) 250px;
   grid-template-rows: 1fr 1fr 0.1fr;
   gap: 10px 10px;
@@ -272,7 +272,7 @@ a:hover {
 
 .highlight {
   background-color: #7053d0;
-  color: white;
+  color: rgb(71, 47, 47);
 }
 iframe {
   width: 70%;
@@ -310,13 +310,14 @@ display: none;
     height: 80%;
     border: none;
     border-radius: 12px;
+    overflow-x: hidden;
 }
   .mobile {
     display: block;
   }
   body {
     background-image: url("../pictures/stuff/wall_green.gif"); /* Replace with your image URL */
-
+overflow: hidden;
     background-position: center;
     color: rgb(205, 140, 123);
 

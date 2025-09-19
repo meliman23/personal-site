@@ -148,7 +148,7 @@ button a {
 .background-image {
   width: 50vw;
   height: 50vh;
-  background-image: url('../pictures/stuff/dfjkixu-e38a6fe1-8217-441c-bbf6-4484d66e573d.png');
+  background-image: url('../pictures/backgrounds/lab.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -179,7 +179,7 @@ button a {
 @media (max-width: 600px) {
 body {
   
- background-color: var(--text);
+ background-color: rgb(35, 100, 22);
   color: var(--text);
 }
   /* show */
