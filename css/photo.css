@@ -7,6 +7,7 @@ body {
   padding: 0;
   margin: 0;
   overflow: hidden;
+  color: #74cf58;
 }
 * {
   box-sizing: border-box;
@@ -142,6 +143,7 @@ h1 {
   background: #383549;
   box-shadow: 0 10px 50px #a5b6f7c6;
   border-radius: 12px;
+  
   max-width: 20wv;
 }
 img {
@@ -163,6 +165,9 @@ p {
 .scroll-info {
   display: flex;
   align-items: center;
+  background-color: rgba(185, 182, 212, 0.158)
+  ;
+  border-radius: 4px;
 }
 .icon svg {
   width: 50px;
@@ -197,9 +202,7 @@ header {
   height: auto;
 }
 
-p {
-  margin: 8px;
-}
+
 @media (max-width: 600px) {
   .statue {display:none;}
   

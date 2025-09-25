@@ -8,13 +8,9 @@
 }
 /* cursor */
 * {
-  
-
   margin: 0;
   padding: 0;
- 
   scrollbar-width: none;
-
   cursor: url(https://cur.cursors-4u.net/games/gam-13/gam1309.ani), url(https://cur.cursors-4u.net/games/gam-13/gam1309.png), auto !important;
 } 
 
@@ -100,18 +96,11 @@ nav{
 }
 
 nav a {
- 
   color: var(--text);
   text-decoration: none;
 }
-a{
-  color: var(--accent);
-}
-
 nav a:hover::before{
-
    text-decoration: none;
-  
   content: "🌸";  /* Custom bullet */
   margin-right: 2px;  /* Adds space between bullet & text */
 }

@@ -1,17 +1,40 @@
-/* General Styles */
+
+:root {
+  --text: rgb(186, 177, 236);
+  --base: rgb(40, 31, 48);
+  --accent: rgb(248, 173, 232);
+  --secondary:rgb(45, 68, 47);
+  --green:rgb(59, 163, 59);
+
+
+
+}/* General Styles */
+*{
+    scrollbar-width: none;
+}
 body {
     background: linear-gradient(135deg, #112, #335); /* Gen 4 inspired colors */
-    font-family: Arial, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: 0;
-    padding: 20px;
-    height: 100vh;
+    padding: 0px;
+    overflow-x: hidden;
     color: beige;
+    scrollbar-color: none;
 }
+section{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(57, 57, 80);
+  display: flex;
+  justify-content: center;
+align-items: center;
+flex-direction: column;
 
+}
 a {
     color: #ffcc00;
     text-decoration: none;
@@ -20,16 +43,32 @@ a:hover {
     text-decoration: underline;
     color: #ff9900;
 }
-
+footer {
+  width: 100vw;
+  padding: 20px 0;
+  background-color: var(--base);
+  color: var(--text);
+  text-align: center;
+  border-top: solid 4px var(--accent);
+  border-radius: 34px 34px 0 0;
+  box-shadow: 0 -5px 20px 5px var(--accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+}
 
 /* Spin animation */
 @keyframes spinny {
     0% {
-      transform: translateX(100%);
+      transform: translateX(70%);
     }
     
     100% {
-      transform: translateX(-400%);
+      transform: translateX(-200%);
     }
   }
   @keyframes spinny2 {
@@ -52,7 +91,7 @@ a:hover {
   .stamps span {
     display: inline-block;
     white-space: nowrap;
-    animation: spinny 30s linear infinite;
+    animation: spinny 15s linear infinite;
   }
   
 
