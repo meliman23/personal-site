@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atmospheric Scene with Upward Moving Windows</title>
+  <style>
+    :root {
+  --text: rgb(186, 177, 236);
+  --base: rgb(40, 31, 48);
+  --accent: rgb(248, 173, 232);
+  --secondary:rgb(45, 68, 47);
+  --green:rgb(59, 163, 59);
+
+}
+    body, html {
+      margin: 0; padding: 0; overflow: hidden;
+      height: 100vh;
+      background: linear-gradient(to top, #a14883, #1b263b, #2c1a38);
+      position: relative;
+      font-family: sans-serif;
+      color: white;
+    }
+    
+    #particleCanvas {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 0; /* behind everything */
+    }
+    
+    #girl {
+      position: fixed;
+      left: 50%;
+      transform: translateX(-50%) translateY(-150%); /* start off screen bottom */
+      width: 200px;
+      z-index: 10;
+      animation: slideIn 4s forwards ease-out;
+    }
+    
+    @keyframes slideIn {
+      to {
+        transform: translateX(-50%) translateY(180%);
+      }
+    }
+    
+    #text {
+      position: fixed;
+      top: 100px;
+     left:50%;
+      border-radius: 12px;
+      text-align: center;
+      z-index: 10;
+      font-size: 24px;
+      font-family:Arial, Helvetica, sans-serif;
+      color:brown;
+      padding: 20px;
+      background-color: #302ebd;
+
+    }
+    button {
+  color: var(--base);
+  background-color: var(--green);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 7px;
+  border-radius: 4px;
+  padding: 20px;
+}
+button:hover::before{
+   text-decoration: none;
+  content: "🌸";  /* Custom bullet */
+  margin-right: 2px;  /* Adds space between bullet & text */
+}
+  </style>
+</head>
+<body>
+
+<canvas id="particleCanvas"></canvas>
+
+<img id="girl" src="./pictures/girl pics/girl-falling-removebg-preview.png" alt="Girl" />
+
+<div id="text">
+    <a href="./index.html"><button>Click to Enter</button></a>
+</div>
+
+<script>
+  const canvas = document.getElementById('particleCanvas');
+  const ctx = canvas.getContext('2d');
+
+  let windowOffsetY = 0; // controls vertical movement of windows
+
+  function resize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  window.addEventListener('resize', resize);
+  resize();
+
+  class Particle {
+    constructor() {
+      this.reset();
+    }
+    reset() {
+      this.x = Math.random() * canvas.width;
+      this.y = canvas.height + Math.random() * 100;
+      this.size = Math.random() * 3 + 1;
+      this.speed = Math.random() * 9 + 2.5;
+      this.opacity = Math.random() * 0.5 + 0.3;
+      this.swing = (Math.random() - 0.5) * 1.5;
+      this.angle = Math.random() * Math.PI * 2;
+    }
+    update() {
+      this.y -= this.speed;
+      this.angle += 0.02;
+      this.x += Math.sin(this.angle) * this.swing;
+      if (this.y < -this.size) this.reset();
+    }
+    draw() {
+      ctx.fillStyle = `rgba(255,255,255,${this.opacity})`;
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  }
+
+  // Draw building silhouette on the right side of the screen
+  function drawBuilding() {
+    const baseHeight = 620;
+    const buildingWidth = 600;
+    const windowWidth = 50;
+    const windowHeight = 70;
+    const spacingX = 100;
+    const spacingY = 150;
+
+    // Move windows upward and wrap around
+    windowOffsetY -= 9.5;
+    if (windowOffsetY < -spacingY) windowOffsetY = 0;
+
+    // Building base rectangle on the right
+    ctx.fillStyle = 'rgba(10, 10, 10, 0.8)';
+    ctx.fillRect(canvas.width - buildingWidth, canvas.height - baseHeight, buildingWidth, baseHeight);
+
+    // Draw windows moving upward with offset
+    for (let x = canvas.width - buildingWidth + 10; x < canvas.width - 10; x += spacingX) {
+      for (let y = canvas.height - baseHeight + spacingY + windowOffsetY; y < canvas.height - 20 + spacingY; y += spacingY) {
+        ctx.fillStyle = 'rgba(200, 100, 110, 0.3)';
+        ctx.fillRect(x, y, windowWidth, windowHeight);
+      }
+    }
+  }
+
+  const particles = [];
+  for (let i = 0; i < 100; i++) {
+    particles.push(new Particle());
+  }
+
+  function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawBuilding();
+    particles.forEach(p => {
+      p.update();
+      p.draw();
+    });
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+</script>
+
+</body>
+</html>

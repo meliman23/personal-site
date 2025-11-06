@@ -3,7 +3,7 @@
   --base: rgb(193, 150, 233);
   --accent: rgb(55, 36, 63);
   --secondary: rgb(30, 21, 53);
-  --green: rgb(93, 111, 93);
+  --green: rgb(9, 82, 9);
 }
 
 body {
@@ -19,7 +19,6 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  overflow: hidden;
 
 }
 
@@ -180,13 +179,13 @@ button a {
 @media (max-width: 600px) {
 body {
   
- background-color: rgb(35, 100, 22);
+ background-color: rgb(28, 51, 42);
   color: var(--text);
 }
   /* show */
  .mobile {
-  display: block;
- align-items: center;
+   display: block;
+   align-items: center;
     width: 40vw;
     border: solid 8px var(--base);
     background-color: var(--secondary);
