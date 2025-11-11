@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Atmospheric Scene with Upward Moving Windows</title>
+  <title>falling</title>
   <style>
     :root {
   --text: rgb(186, 177, 236);
-  --base: rgb(40, 31, 48);
+  --base: rgb(70, 204, 193);
   --accent: rgb(248, 173, 232);
   --secondary:rgb(45, 68, 47);
   --green:rgb(59, 163, 59);
@@ -21,6 +21,7 @@
       font-family: sans-serif;
       color: white;
     }
+    a{color: var(--base);}
     
     #particleCanvas {
       position: fixed;
@@ -33,18 +34,35 @@
     #girl {
       position: fixed;
       left: 50%;
-      transform: translateX(-50%) translateY(-150%); /* start off screen bottom */
-      width: 200px;
+      transform: translateX(30%) translateY(-150%);
+       /* start off screen bottom */
+      width: 350px;
       z-index: 10;
       animation: slideIn 4s forwards ease-out;
     }
     
     @keyframes slideIn {
       to {
-        transform: translateX(-50%) translateY(180%);
+        transform: translateX(-70%) translateY(100%);
       }
     }
-    
+    /* dhydragon  */
+.fly{
+
+  animation: fly2 10s infinite ease-in;
+  z-index: -10;
+  width: 150px;
+  height: auto;
+}
+@keyframes fly2 {
+  0%, 100% {transform: translateY(-90px);
+            transform: translatex(30px);}
+ 
+  50%{transform: translatey(800px);
+     }
+ 
+  
+}
     #text {
       position: fixed;
       top: 100px;
@@ -52,11 +70,11 @@
       border-radius: 12px;
       text-align: center;
       z-index: 10;
-      font-size: 24px;
+      font-size: 18px;
       font-family:Arial, Helvetica, sans-serif;
       color:brown;
-      padding: 20px;
-      background-color: #302ebd;
+      padding: 12px;
+      background-color: #2323369d;
 
     }
     button {
@@ -78,13 +96,21 @@ button:hover::before{
 <body>
 
 <canvas id="particleCanvas"></canvas>
-
+<img class="fly" src="./pictures/pokemon/pokemon mew STICKER.gif" alt="">
 <img id="girl" src="./pictures/girl pics/girl-falling-removebg-preview.png" alt="Girl" />
+  <a href="./index.html"><img id="girl" src="./pictures/girl pics/girl-falling-removebg-preview.png" alt="Girl" />
+</a>
+
 
 <div id="text">
-    <a href="./index.html"><button>Click to Enter</button></a>
-</div>
+  
+    <h2>Just do it ...</h2>
 
+    <!-- song here -->
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5YATMi0sXvPQS42PtndAcH?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<p><a href="./a.galexy.html">Next location</a></p>
+   </div>
+<div></div>
 <script>
   const canvas = document.getElementById('particleCanvas');
   const ctx = canvas.getContext('2d');
