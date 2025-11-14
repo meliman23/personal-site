@@ -18,12 +18,12 @@
    
     <div class="row girl-container">
       <a href="./m.meta.html">
-        <img src="./pictures/girl pics/green dress.png" class="girl" alt="Girl">
+        <img src="./pictures/girl pics/giphy.gif" class="girl" alt="Girl">
       </a>
       <img id="pokemon" class="pokemon" src="" alt="Random Pokémon">
     </div>
   </div>
-  <img src="./pictures/girl pics/cyberlover.gif" class=" mobile" alt="Girl">
+  <img style="max-height: 300px; width: auto;" src="./pictures/girl pics/girl stand.gif" class=" mobile" alt="Girl">
 
   <div class="textbox" onclick="nextText()">Oh you found my website...<i>(click to continue)</i> </div>
 
@@ -42,11 +42,12 @@
     //loops though images on load
     const pokemonImages = [
       'pictures/pokemon/dragonite.gif',
-      'pictures/pokemon/drifblim.gif',
-      'pictures/pokemon/espeon.gif',
+     
+      'pictures/pokemon/dragon.gif',
       'pictures/pokemon/roserade-f.gif',
-      'pictures/pokemon/volcarona.gif',
-      'pictures/pokemon/hydreigon.gif'
+      
+      'pictures/pokemon/pokemon mew STICKER.gif',
+     
     ];
     const randomPokemon = pokemonImages[Math.floor(Math.random() * pokemonImages.length)];
 
@@ -54,20 +55,18 @@
 
     // text box js
     const texts = [
-      "you should look at my site on desktop ",
-      "Theres some cool stuff here ...   ",
+      "if your on mobile it wont work you should look at my site on desktop ",
+
       "Heres the front page ⤵️",
       "you clicked again? on accident? ",
-      "Click on me (secret page )",
-      " if your on mobile it wont work "
-    ];
+      "Click on purpple girl (secret page )"]
 
 
     let textIndex = 0;
     function nextText() {
       textIndex = (textIndex + 1) % texts.length;
       document.querySelector('.textbox').innerText = texts[textIndex];
-      document.getElementById('buttons').classList.toggle('hidden', textIndex !== 2);
+      document.getElementById('buttons').classList.toggle('hidden', textIndex !== 1);
     }
   </script>
 </body>

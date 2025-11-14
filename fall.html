@@ -7,14 +7,16 @@
   <style>
     :root {
   --text: rgb(186, 177, 236);
-  --base: rgb(70, 204, 193);
+  --base: rgb(42, 117, 111);
   --accent: rgb(248, 173, 232);
-  --secondary:rgb(45, 68, 47);
+  --secondary:rgb(62, 69, 83);
   --green:rgb(59, 163, 59);
 
 }
     body, html {
-      margin: 0; padding: 0; overflow: hidden;
+      margin: 0; padding: 0; 
+      overflow: hidden;
+      width: 100vw;
       height: 100vh;
       background: linear-gradient(to top, #a14883, #1b263b, #2c1a38);
       position: relative;
@@ -30,20 +32,45 @@
       height: 100vh;
       z-index: 0; /* behind everything */
     }
-    
+    .navbtn {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 6px;
+  border-radius: 12px;
+  background-color: var(--secondary);       /* soft mint neon */
+  color: var(--text);                  /* dark text for contrast */
+  text-decoration: none;
+  font-weight: 600;
+  transition: 
+    background-color 1s ease,
+    transform 0.9s ease,
+    box-shadow 0.9s ease;
+}
+
+.navbtn:hover {
+  background-color: var(--accent);
+  color: var(--base);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.navbtn:hover::before {
+  content: "🌸";
+  margin-right: 6px;
+}
     #girl {
       position: fixed;
       left: 50%;
       transform: translateX(30%) translateY(-150%);
        /* start off screen bottom */
-      width: 350px;
+      width: 250px;
       z-index: 10;
-      animation: slideIn 4s forwards ease-out;
+      animation: slideIn 6s forwards ease-out;
     }
     
     @keyframes slideIn {
       to {
-        transform: translateX(-70%) translateY(100%);
+        transform: translateX(-50%) translateY(130%);
       }
     }
     /* dhydragon  */
@@ -66,7 +93,7 @@
     #text {
       position: fixed;
       top: 100px;
-     left:50%;
+     right:10%;
       border-radius: 12px;
       text-align: center;
       z-index: 10;
@@ -75,22 +102,20 @@
       color:brown;
       padding: 12px;
       background-color: #2323369d;
+      width:40vw ;
 
     }
-    button {
-  color: var(--base);
-  background-color: var(--green);
-  text-decoration: none;
-  font-weight: bold;
-  padding: 7px;
-  border-radius: 4px;
-  padding: 20px;
-}
-button:hover::before{
-   text-decoration: none;
-  content: "🌸";  /* Custom bullet */
-  margin-right: 2px;  /* Adds space between bullet & text */
-}
+
+
+  @media (max-width: 600px) {
+      #text {
+    top:5%;
+     right:10%;
+     width: 80vw;
+   
+      }
+     
+  }
   </style>
 </head>
 <body>
@@ -104,11 +129,12 @@ button:hover::before{
 
 <div id="text">
   
-    <h2>Just do it ...</h2>
+    <h2>That was the right ansawer literally</h2>
 
     <!-- song here -->
-<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5YATMi0sXvPQS42PtndAcH?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-<p><a href="./a.galexy.html">Next location</a></p>
+     <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5YATMi0sXvPQS42PtndAcH?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+<p><a class="navbtn" href="./a.galexy.html">Next location</a></p>
    </div>
 <div></div>
 <script>
@@ -153,7 +179,7 @@ button:hover::before{
 
   // Draw building silhouette on the right side of the screen
   function drawBuilding() {
-    const baseHeight = 620;
+    const baseHeight = 1620;
     const buildingWidth = 600;
     const windowWidth = 50;
     const windowHeight = 70;

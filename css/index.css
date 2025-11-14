@@ -1,9 +1,9 @@
 :root {
   --text: #222736;
   --base: rgb(193, 150, 233);
-  --accent: rgb(55, 36, 63);
+  --accent: rgb(22, 49, 39);
   --secondary: rgb(30, 21, 53);
-  --green: rgb(9, 82, 9);
+  --dark:  rgb(26, 22, 25);
 }
 
 body {
@@ -83,8 +83,10 @@ img {
 }
 
 .pokemon {
+  margin: 0;
   width: auto;
-  height: 130px;
+  max-height: 250px;
+  min-height: 200px;
   animation: pokemonAppear 2s ease-out forwards;
 }
 
@@ -179,7 +181,7 @@ button a {
 @media (max-width: 600px) {
 body {
   
- background-color: rgb(28, 51, 42);
+ background-color: var(--dark);
   color: var(--text);
 }
   /* show */

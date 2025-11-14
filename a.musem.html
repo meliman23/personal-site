@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Emotional Observatory Museum</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+    :root {
+      --background: #0e0e14;
+      --text-light: #e0e0e8;
+      --accent: #8a7fff;
+      --hover-accent: #b4aaff;
+      --border: rgba(138, 127, 255, 0.3);
+    }
+
+    * {
+        margin: 0;
+  padding: 0;
+  scrollbar-width: none;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: var(--background);
+      color: var(--text-light);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      padding: 2rem;
+      scroll-behavior: smooth;
+      
+    }
+/* hr animation */
+hr.expand {
+  width: 0;
+  height: 4px;
+  border: none;
+  background-color: var(--accent);
+  margin: 20px 0;
+  transition: width 1.5s ease-out;
+  animation: stretch 10s ease-out forwards;
+}
+@keyframes stretch {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+    header {
+      max-width: 720px;
+      margin: 0 auto 3rem;
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    header h1 {
+      font-weight: 600;
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+      letter-spacing: 0.06em;
+      user-select: none;
+    }
+
+    header p {
+      font-weight: 300;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      max-width: 500px;
+      margin: 0 auto;
+      color: #bdbdd4cc;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    nav a {
+      padding: 0.7rem 1.8rem;
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 1.1rem;
+      text-decoration: none;
+      transition: background 0.3s, color 0.3s;
+      user-select: none;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      background: var(--accent);
+      color: var(--background);
+      outline: none;
+      cursor: pointer;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    section.card {
+      background: rgba(138, 127, 255, 0.06);
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      padding: 1.6rem 1.8rem;
+      box-shadow: 0 0 20px rgba(138, 127, 255, 0.15);
+      color: var(--text-light);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+      cursor: default;
+      user-select: text;
+    }
+
+    section.card:hover {
+      transform: scale(1.05);
+      background: rgba(138, 127, 255, 0.15);
+      box-shadow: 0 0 30px rgba(138, 127, 255, 0.35);
+      cursor: pointer;
+    }
+
+    section.card h3 {
+      margin-top: 0;
+      font-weight: 600;
+      font-size: 1.25rem;
+      letter-spacing: 0.03em;
+      margin-bottom: 0.6rem;
+      user-select: text;
+    }
+
+    section.card p {
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 1.4;
+      color: #d1d1e1cc;
+      user-select: text;
+    }
+
+    /* Aura color variations */
+    section.card[data-aura="lavender"] {
+      border-color: rgba(200, 160, 255, 0.4);
+      box-shadow: 0 0 20px rgba(200, 160, 255, 0.25);
+      background: rgba(200, 160, 255, 0.05);
+    }
+    section.card[data-aura="amber"] {
+      border-color: rgba(255, 190, 100, 0.4);
+      box-shadow: 0 0 20px rgba(255, 190, 100, 0.25);
+      background: rgba(255, 190, 100, 0.05);
+    }
+    section.card[data-aura="sky"] {
+      border-color: rgba(140, 200, 255, 0.4);
+      box-shadow: 0 0 20px rgba(140, 200, 255, 0.25);
+      background: rgba(140, 200, 255, 0.05);
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Emotional Observatory Museum</h1>
+    <p>
+      This archive collects fleeting emotional constellations seen through my digital life.  
+      Each entry is a glowing fragment — a secret pulse in the ambient internet atmosphere.  
+      Explore the tiers below to wander through the galleries of connection and resonance.
+    </p>
+    <nav>
+      <a href="#s-tier">S Tier Gallery</a>
+      <a href="#a-tier">A Tier Gallery</a>
+      <a href="#b-tier">B Tier Gallery</a>
+    </nav>
+  </header>
+<hr class="expand">
+  <main>
+    <section id="s-tier" class="card" data-aura="lavender" tabindex="0" role="region" aria-label="S Tier Gallery preview">
+      <h3>S Tier Gallery</h3>
+      <p>The deepest connections, the brightest stars of this emotional constellation.</p>
+      <a href="./stier.html">Here</a>
+    </section>
+
+    <section id="a-tier" class="card" data-aura="amber" tabindex="0" role="region" aria-label="A Tier Gallery preview">
+      <h3>A Tier Gallery</h3>
+      <p>Meaningful echoes and strong impressions, resonating just below the core.</p>
+    </section>
+
+    <section id="b-tier" class="card" data-aura="sky" tabindex="0" role="region" aria-label="B Tier Gallery preview">
+      <h3>B Tier Gallery</h3>
+      <p>Interesting observations and ambient notes — subtle pulses in the background.</p>
+    </section>
+  </main>
+</body>
+</html>

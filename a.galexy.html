@@ -5,11 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Galaxy Visualizer</title>
   <style>
+    :root {
+  --text: rgb(186, 177, 236);
+  --base: rgb(20, 20, 20);
+  --accent: rgb(248, 173, 232);
+  --secondary:rgb(40, 31, 41);
+ 
+
+}
     body {
       margin: 0;
       padding: 0;
-      overflow: hidden;font-family: Arial, Helvetica, sans-serif;
+      overflow: hidden;
+      font-family:monospace;
     position: relative;
+ 
     }
     h3{margin-bottom: 100px;}
     canvas {
@@ -27,41 +37,86 @@
     #box{
       position: absolute;
         bottom:20px;
-      right:150px;
+      left:5%;
+    }
+    #box2{
+      position: absolute;
+      top:22px;
+      right:20%;
     }
     .con{
 
       display: flex;
       flex-direction: column;
-      color: wheat;
-      background-color: black;
+      color: rgb(229, 238, 197);
+      background-color: rgba(15, 14, 15, 0.788);
       width: 300px;
-      height: 100px;
-      padding: 14px;
+      height: 120px;
+      padding: 8px;
       border-radius: 12px;
-      border: 3px solid pink;
+      border: 3px solid rgb(155, 161, 241);
       text-align-last: center;
       overflow-x: hidden;
       overflow-y: scroll;
       scrollbar-width: none;
     }
+    .navbtn {
+  display: inline-block;
+  padding: 4px 8px;
+  margin: 6px;
+  border-radius: 12px;
+  background-color: var(--secondary);       /* soft mint neon */
+  color: var(--text);                  /* dark text for contrast */
+  text-decoration: none;
+  font-weight: 600;
+  transition: 
+    background-color 1s ease,
+    transform 0.9s ease,
+    box-shadow 0.9s ease;
+}
+
+.navbtn:hover {
+  background-color: var(--accent);
+  color: var(--base);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.navbtn:hover::before {
+  content: "🌸";
+  margin-right: 6px;
+}
    
     @media (max-width: 600px) {
     
       #box{
-        position: absolute;
-        right: 20px;
-        top: 300px;
-      }
+      position: absolute;
+        bottom:20px;
+      right:55%;
+      width: 20vw;
+    }
+    #box2{
+      position: absolute;
+      top:22px;
+      right:60%;
+      width: 20vw;
+    }
     }
   </style>
 </head>
 <body>
+<div id="box2">
+  <div class="con">
+     <h2>Tiktok likes Visualized</h2>
+  <p><a class="navbtn" href="./a.music.html">Random</a> | <a class="navbtn" href="./m.map.html">Ste map</a></p>
+  </div>
+ 
+</div>
   <div id="box">
     <div class="con">
-      <h3>Hi ,im scorllable</h3>
-      <h1><span style="color: gold;">29,220 stars</span></h1>
-      <p>aka 29k days or 80 years</p>
+      <h2>Scroll down 4 more </h2>
+      <h3><span style="color: gold;">3k stars</span></h3>
+      <p>Im prob not gonna keep updating this cool visual tho</p>
       
         <p>heres some music like always </p>
 <div id="spotify">
@@ -74,9 +129,9 @@
     </iframe>
     </div>
   <p>cool galexy huh.. yea i found someones then made my own kinda i hope you dont get dissy</p>
-  <p>heres the way <a href="./a.blinkie.html">out</a></p>
-  <p>but yea... this is what life looks like on averge </p>
-  <p>the people who make it to 29k are "lucky"</p>
+
+
+
   <p>-me 09/2025</p>
   </div>
   </div>
@@ -93,7 +148,8 @@
 
     // Galaxy material
     let geometry = new THREE.BufferGeometry();
-    let numStars = 29220;
+    // number of stars
+    let numStars = 3133;
     let positions = new Float32Array(numStars * 6);
     let colors = new Float32Array(numStars * 9);
     for (let i = 0; i < numStars; i++) {

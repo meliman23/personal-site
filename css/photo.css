@@ -117,8 +117,8 @@ h1 {
 
 header {
   position: absolute;
-  right: 1rem;
-  bottom: 2rem;
+  right: 40%;
+  bottom: 0%;
 }
 .scroll-info {
   top: 1rem;
@@ -205,5 +205,10 @@ header {
 
 @media (max-width: 600px) {
   .statue {display:none;}
+  header {
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+}
   
 }
