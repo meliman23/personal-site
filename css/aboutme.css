@@ -8,34 +8,31 @@
   --panel: #111122;
 }
 
+/* RESET */
 * {
   scrollbar-width: none;
   box-sizing: border-box;
   cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat982.cur), auto !important;
+  margin: 0;
+  padding: 0;
 }
 
-.row{
-    display: flex;
-    flex-direction: row;
-}
-.flower{
-    width: auto;
-    height: 150px;
-}
 body {
   margin: 0;
-  background: radial-gradient(circle at center, #0e0b1b 0%, #000 100%);
+  background: #000;
   background-image: url('../pictures/backgrounds/bck-starnight black.gif');
-  background-size: cover ;
+  background-size: cover;
+  background-attachment: fixed;
   color: var(--text);
   font-family: 'Courier New', monospace;
   display: flex;
   justify-content: center;
   flex-direction: column;
-
   width: 100vw;
+  overflow-x: hidden;
 }
 
+/* Titles */
 h1, h2, h3 {
   color: var(--accent);
   text-shadow: 0 0 10px var(--accent), 0 0 20px var(--accent);
@@ -52,43 +49,53 @@ a:hover {
   text-shadow: 0 0 10px var(--neon-green);
 }
 
+/* MAIN GRID */
 .parent {
   display: grid;
-  grid-template-columns: 0.5fr repeat(3, 1fr) 0.5fr;
   width: 85vw;
   margin: auto;
   gap: 12px;
+  grid-template-columns: 300px 1fr 300px;
 }
 
+/* HEADER */
 .div1 {
-  grid-column: 1 / 6;
- justify-content: center;
+  grid-column: 1 / 4;
   text-align: center;
   background: linear-gradient(90deg, #1a001f, #000, #001a1f);
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 0 25px var(--neon-pink);
-   border: 1px solid var(--accent);
+  border: 1px solid var(--accent);
 }
 
 .div1 img {
   width: 80px;
 }
 
+/* LEFT + RIGHT COLUMNS */
 .div2, .div4 {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
+/* CENTER COLUMN */
 .div3 {
-  background: rgba(10, 10, 20, 0.8);
+  background: rgba(10, 10, 20, 0.85);
   border: 1px solid var(--accent);
   border-radius: 16px;
   box-shadow: 0 0 30px var(--neon-blue);
   padding: 20px;
+  overflow: hidden;
 }
 
+.para {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+/* Boxes */
 .box {
   background: rgba(15, 15, 25, 0.85);
   border: 1px solid var(--neon-pink);
@@ -98,6 +105,7 @@ a:hover {
   text-align: center;
 }
 
+/* Buttons */
 button {
   background: var(--neon-blue);
   border: none;
@@ -114,6 +122,7 @@ button:hover {
   box-shadow: 0 0 20px var(--neon-green);
 }
 
+/* Blinkies */
 img.blink {
   border-radius: 8px;
   transition: transform 0.3s ease;
@@ -124,20 +133,12 @@ img.blink:hover {
   filter: drop-shadow(0 0 10px var(--neon-blue));
 }
 
-footer {
-  margin-top: 30px;
-  background: #090013;
-  border-top: 2px solid var(--accent);
-  box-shadow: 0 -5px 20px var(--neon-pink);
-  text-align: center;
-  padding: 20px;
-  color: var(--text);
-}
-
+/* Flip Card */
 .flip-container {
   width: 200px;
   height: 200px;
   perspective: 1000px;
+  margin: auto;
 }
 
 .flipper {
@@ -164,15 +165,22 @@ footer {
   transform: rotateY(180deg);
 }
 
-@media (max-width: 768px) {
+/* ROW FIX (your Spotify + mood rows) */
+.row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* MOBILE FIXES */
+@media (max-width: 900px) {
   .parent {
     grid-template-columns: 1fr;
+    width: 95vw;
   }
-  .div2, .div4 {
+
+  .div2,
+  .div4 {
     display: none;
-  }
-  .div3 {
-    width: 95%;
-    margin: auto;
   }
 }
