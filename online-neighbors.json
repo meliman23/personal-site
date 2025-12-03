@@ -1,0 +1,205 @@
+[
+  {
+    "id": "cubaman",
+    "name": "Cubaman",
+    "role": "Content Creator",
+    "tier": "A",
+    "avatar": "pictures/pokemon/dragon.gif",
+    "bio": "He makes bops fr.",
+    "tt": "https://www.tiktok.com/@cubman_?lang=en",
+    "link": "/person.html?id=cubaman"
+  },
+  {
+    "id": "alpha-omega",
+    "name": "Alpha Omega",
+    "role": "Content Creator",
+    "tier": "A",
+    "avatar": "pictures/pokemon/dialga.gif",
+    "bio": "Bro cool asl.",
+    "tt": "",
+    "link": "/person.html?id=alpha-omega"
+  },
+  {
+    "id": "seniee-wu",
+    "name": "Seniee Wu",
+    "role": "Content Creator",
+    "tier": "A",
+    "avatar": "pictures/pokemon/hydreigon.gif",
+    "bio": "Bro raps — I didn't know that and it's fire.",
+    "tt": "https://tiktok.com/@placeholder",
+    "link": "/person.html?id=seniee-wu"
+  },
+  {
+    "id": "gabe-sans",
+    "name": "Gabe Sans",
+    "role": "Unknown",
+    "tier": "A",
+    "avatar": "pictures/pokemon/hydreigon.gif",
+    "bio": "Isn't real — bro cool af.",
+    "tt": "https://tiktok.com/@placeholder",
+    "link": "/person.html?id=gabe-sans"
+  },
+  {
+    "id": "deant-the-rapper",
+    "name": "DeAnt the Rapper",
+    "role": "Musician",
+    "tier": "A",
+    "avatar": "pictures/pokemon/hydreigon.gif",
+    "bio": "Bro motivates me ngl.",
+    "tt": "https://tiktok.com/@placeholder",
+    "link": "/person.html?id=deant-the-rapper"
+  },
+  {
+    "id": "tigerseye",
+    "name": "Tigerseye",
+    "role": "Artist",
+    "tier": "A",
+    "avatar": "pictures/pokemon/dragonite.gif",
+    "bio": "Really cool paintings.",
+    "tt": "https://tiktok.com/@placeholder",
+    "link": "/person.html?id=tigerseye"
+  },
+  {
+    "id": "mcswaggerbadger",
+    "name": "McSwaggerBadger",
+    "role": "Video Creator",
+    "tier": "A",
+    "avatar": "pictures/pokemon/drifblim.gif",
+    "bio": "Bro's videos funny asl ngl.",
+    "tt": "https://tiktok.com/@placeholder",
+    "link": "/person.html?id=mcswaggerbadger"
+  },
+  {
+    "id": "infinite-monkey",
+    "name": "Infinite Monkey",
+    "role": "Vibes",
+    "tier": "A",
+    "avatar": "pictures/pokemon/espeon.gif",
+    "bio": "Her positive vibes are contagious <3",
+    "tt": "https://tiktok.com/@placeholder",
+    "link": "/person.html?id=infinite-monkey"
+  },
+  {
+    "id": "that-one-guy",
+    "name": "That One Guy",
+    "role": "Unknown",
+    "tier": "A",
+    "avatar": "pictures/pokemon/volcarona.gif",
+    "bio": "<3",
+    "tt": "https://tiktok.com/@placeholder",
+    "link": "/person.html?id=that-one-guy"
+  },
+  {
+    "id": "cincinprincess",
+    "name": "CincinPrincess",
+    "role": "Unknown",
+    "tier": "A",
+    "avatar": "pictures/girl pics/dollz2.gif",
+    "bio": "<3",
+    "tt": "https://tiktok.com/@placeholder",
+    "link": "/person.html?id=cincinprincess"
+  },
+  {
+    "id": "otaku-support-group",
+    "name": "Otaku Support Group",
+    "role": "Real One",
+    "tier": "A",
+    "avatar": "pictures/backgrounds/kamihouse.jpeg",
+    "bio": "<3",
+    "tt": "https://tiktok.com/@placeholder",
+    "link": "/person.html?id=otaku-support-group"
+  },
+  {
+    "id": "sadqueen",
+    "name": "Sadqueen",
+    "role": "Unknown",
+    "tier": "A",
+    "avatar": "pictures/backgrounds/kamihouse.jpeg",
+    "bio": "<3",
+    "tt": "https://tiktok.com/@placeholder",
+    "link": "/person.html?id=sadqueen"
+  },
+
+
+
+  {
+    "id": "tony",
+    "name": "Tony",
+    "role": "Unknown",
+    "tier": "A",
+    "avatar": "pictures/backgrounds/kamihouse.jpeg",
+    "bio": "<3",
+    "tt": "",
+    "link": "/person.html?id=tony"
+  },
+  {
+    "id": "natalie",
+    "name": "Natalie",
+    "role": "Unknown",
+    "tier": "A",
+    "avatar": "pictures/backgrounds/kamihouse.jpeg",
+    "bio": "<3",
+    "tt": "",
+    "link": "/person.html?id=natalie"
+  },
+  {
+    "id": "coco",
+    "name": "Coco",
+    "role": "Unknown",
+    "tier": "A",
+    "avatar": "pictures/backgrounds/kamihouse.jpeg",
+    "bio": "<3",
+    "tt": "",
+    "link": "/person.html?id=coco"
+  },
+  {
+    "id": "jw",
+    "name": "JW",
+    "role": "Unc",
+    "tier": "A",
+    "avatar": "pictures/backgrounds/kamihouse.jpeg",
+    "bio": "<3",
+    "tt": "",
+    "link": "/person.html?id=jw"
+  },
+  {
+    "id": "lisa",
+    "name": "Lisa",
+    "role": "Unknown",
+    "tier": "A",
+    "avatar": "pictures/backgrounds/kamihouse.jpeg",
+    "bio": "<3",
+    "tt": "",
+    "link": "/person.html?id=lisa"
+  },
+  {
+    "id": "snoopy",
+    "name": "Snoopy",
+    "role": "Unknown",
+    "tier": "A",
+    "avatar": "pictures/backgrounds/kamihouse.jpeg",
+    "bio": "<3",
+    "tt": "",
+    "link": "/person.html?id=snoopy"
+  },
+  {
+    "id": "forgotten",
+    "name": "The People I Forgot",
+    "role": "Gone Not Forgotten",
+    "tier": "A",
+    "avatar": "pictures/backgrounds/kamihouse.jpeg",
+    "bio": "I'm sure there's more.",
+    "tt": "",
+    "link": "/person.html?id=forgotten"
+  },
+  {
+    "id": "rj",
+    "name": "RJ",
+    "role": "Unknown",
+    "tier": "A",
+    "avatar": "pictures/backgrounds/kamihouse.jpeg",
+    "bio": "<3",
+    "tt": "",
+    "link": "/person.html?id=rj"
+  }
+]
