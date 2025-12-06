@@ -13,7 +13,7 @@
     scrollbar-width: none;
 }
 body {
-    background: linear-gradient(135deg, #112, #335); /* Gen 4 inspired colors */
+    background: linear-gradient(135deg, rgb(9, 9, 19), rgb(6, 6, 26)); /* Gen 4 inspired colors */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: flex;
     justify-content: center;
@@ -28,7 +28,7 @@ body {
 section{
   height: 100vh;
   width: 100vw;
-  background-color: rgb(57, 57, 80);
+  background-color: rgb(15, 15, 22);
   display: flex;
   justify-content: center;
 align-items: center;

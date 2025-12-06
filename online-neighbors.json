@@ -16,7 +16,7 @@
     "tier": "A",
     "avatar": "pictures/pokemon/dialga.gif",
     "bio": "Bro cool asl.",
-    "tt": "",
+    "tt": "https://www.tiktok.com/@robertmalonejr?lang=en",
     "link": "/person.html?id=alpha-omega"
   },
   {
@@ -26,18 +26,38 @@
     "tier": "A",
     "avatar": "pictures/pokemon/hydreigon.gif",
     "bio": "Bro raps — I didn't know that and it's fire.",
-    "tt": "https://tiktok.com/@placeholder",
+    "tt": "https://www.tiktok.com/@..ch33s3?lang=en",
     "link": "/person.html?id=seniee-wu"
+  },
+   {
+    "id": "lilquinofficial",
+    "name": "lilquin",
+    "role": "Content Creator",
+    "tier": "A",
+    "avatar": "pictures/pokemon/hydreigon.gif",
+    "bio": "Bro raps and motivates me ngl",
+    "tt": "https://www.tiktok.com/@lilquinofficial?lang=en",
+    "link": "/person.html?id=lilquinofficial"
   },
   {
     "id": "gabe-sans",
     "name": "Gabe Sans",
-    "role": "Unknown",
+    "role": "Content Creator",
     "tier": "A",
     "avatar": "pictures/pokemon/hydreigon.gif",
-    "bio": "Isn't real — bro cool af.",
-    "tt": "https://tiktok.com/@placeholder",
+    "bio": "gabe Isn't real  (bro cool af.)",
+    "tt": "https://www.tiktok.com/@gabe.sanz7?lang=en",
     "link": "/person.html?id=gabe-sans"
+  },
+   {
+    "id": "realraymondrivera",
+    "name": "Raymond The Vampire…",
+    "role": "Musician",
+    "tier": "A",
+    "avatar": "pictures/pokemon/hydreigon.gif",
+    "bio": "i reccomend his music ",
+    "tt": "https://www.tiktok.com/@realraymondrivera?lang=en",
+    "link": "/person.html?id=realraymondrivera"
   },
   {
     "id": "deant-the-rapper",
@@ -46,7 +66,7 @@
     "tier": "A",
     "avatar": "pictures/pokemon/hydreigon.gif",
     "bio": "Bro motivates me ngl.",
-    "tt": "https://tiktok.com/@placeholder",
+    "tt": "https://www.tiktok.com/@deanttherapper?lang=en",
     "link": "/person.html?id=deant-the-rapper"
   },
   {
@@ -56,7 +76,7 @@
     "tier": "A",
     "avatar": "pictures/pokemon/dragonite.gif",
     "bio": "Really cool paintings.",
-    "tt": "https://tiktok.com/@placeholder",
+    "tt": "https://www.tiktok.com/@misskitterton?lang=en",
     "link": "/person.html?id=tigerseye"
   },
   {
@@ -66,8 +86,18 @@
     "tier": "A",
     "avatar": "pictures/pokemon/drifblim.gif",
     "bio": "Bro's videos funny asl ngl.",
-    "tt": "https://tiktok.com/@placeholder",
+    "tt": "https://www.tiktok.com/@mcswaggerbadger?lang=en",
     "link": "/person.html?id=mcswaggerbadger"
+  },
+   {
+    "id": "therealestseb",
+    "name": "seb",
+    "role": "Video Creator",
+    "tier": "A",
+    "avatar": "pictures/pokemon/drifblim.gif",
+    "bio": "Bro's videos funny asl ngl.",
+    "tt": "https://www.tiktok.com/@therealestseb?lang=en",
+    "link": "/person.html?id=therealestseb"
   },
   {
     "id": "infinite-monkey",
@@ -76,19 +106,10 @@
     "tier": "A",
     "avatar": "pictures/pokemon/espeon.gif",
     "bio": "Her positive vibes are contagious <3",
-    "tt": "https://tiktok.com/@placeholder",
+    "tt": "https://www.tiktok.com/@infin8monkey?lang=en",
     "link": "/person.html?id=infinite-monkey"
   },
-  {
-    "id": "that-one-guy",
-    "name": "That One Guy",
-    "role": "Unknown",
-    "tier": "A",
-    "avatar": "pictures/pokemon/volcarona.gif",
-    "bio": "<3",
-    "tt": "https://tiktok.com/@placeholder",
-    "link": "/person.html?id=that-one-guy"
-  },
+ 
   {
     "id": "cincinprincess",
     "name": "CincinPrincess",
@@ -119,9 +140,6 @@
     "tt": "https://tiktok.com/@placeholder",
     "link": "/person.html?id=sadqueen"
   },
-
-
-
   {
     "id": "tony",
     "name": "Tony",
