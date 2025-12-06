@@ -20,6 +20,16 @@
     "link": "/person.html?id=alpha-omega"
   },
   {
+    "id": "ahiru",
+    "name": "Ahiru_7",
+    "role": "Content Creator",
+    "tier": "A",
+    "avatar": "pictures/girl pics/Black_Pfps-removebg-preview.png",
+    "bio": "makes tiktoks or something",
+    "tt": "https://www.tiktok.com/@npc175",
+    "link": "/person.html?id=ahiru"
+  },
+  {
     "id": "seniee-wu",
     "name": "Seniee Wu",
     "role": "Content Creator",
