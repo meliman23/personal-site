@@ -485,8 +485,8 @@ background-color: var(--base);
 }
 
 .floating-girl {
-  width: 200px; 
-  height: auto;
+  width: auto; 
+  height: 200px;
 
   padding:8px;
   border-radius: 42px;
