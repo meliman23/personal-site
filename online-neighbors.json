@@ -2,13 +2,34 @@
   {
     "id": "cubaman",
     "name": "Cubaman",
-    "role": "Content Creator",
+    "role": "Music",
     "tier": "A",
     "avatar": "pictures/pokemon/dragon.gif",
     "bio": "He makes bops fr.",
     "tt": "https://www.tiktok.com/@cubman_?lang=en",
     "link": "/person.html?id=cubaman"
   },
+   {
+    "id": "Hikari",
+    "name": "Hikari",
+    "role": "Content Creator",
+    "tier": "A",
+    "avatar": "pictures/pokemon/dragon.gif",
+    "bio": "I love her videos ngl",
+    "tt": "https://www.tiktok.com/@n0tesart",
+    "link": "/person.html?id=Hikari"
+  },
+     {
+    "id": "keihardyy",
+    "name": "kei hardyy",
+    "role": "Music ",
+    "tier": "A",
+    "avatar": "pictures/pokemon/dragon.gif",
+    "bio": "#dmo bro drops bangers ",
+    "tt": "https://www.tiktok.com/@n0tesart",
+    "link": "/person.html?id=Hikari"
+  },
+  
   {
     "id": "alpha-omega",
     "name": "Alpha Omega",
@@ -62,7 +83,7 @@
    {
     "id": "realraymondrivera",
     "name": "Raymond The Vampire…",
-    "role": "Musician",
+    "role": "Music",
     "tier": "A",
     "avatar": "pictures/pokemon/hydreigon.gif",
     "bio": "i reccomend his music ",
@@ -72,7 +93,7 @@
   {
     "id": "deant-the-rapper",
     "name": "DeAnt the Rapper",
-    "role": "Musician",
+    "role": "Music",
     "tier": "A",
     "avatar": "pictures/pokemon/hydreigon.gif",
     "bio": "Bro motivates me ngl.",

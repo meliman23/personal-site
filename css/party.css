@@ -1,6 +1,6 @@
 :root {
-    --blue: rgb(27, 25, 43);
-    --red: rgb(183, 190, 81);
+    --blue: rgb(6, 48, 6);
+    --red: rgb(11, 48, 58);
     --text: antiquewhite;
 }
 
@@ -122,7 +122,7 @@ img {
 
 @media (max-width: 600px) {
     body {
-        background-color: rgb(36, 65, 43);
+        background-color: rgb(10, 39, 17);
     }
 
     .show,

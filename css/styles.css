@@ -1,8 +1,8 @@
 :root {
   --text: rgb(186, 177, 236);
-  --base: rgb(20, 20, 20);
-  --accent: rgb(248, 173, 232);
-  --secondary:rgb(40, 31, 41);
+  --base: rgb(25, 21, 26);
+  --accent: #f8ade8;
+  --secondary:rgb(38, 54, 58);
   --green:rgb(59, 163, 59);
 
 }
