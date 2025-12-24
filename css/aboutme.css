@@ -1,7 +1,7 @@
 :root {
-  --bg-dark: #0a0a0f;
-  --neon-pink: #ff4bf8;
-  --neon-blue: #4fdcff;
+  --bg-dark: #171758;
+  --neon-pink: #499b23;
+  --neon-blue: #cd4fff;
   --neon-green: #6aff8a;
   --text: #e7e7ff;
   --accent: var(--neon-pink);

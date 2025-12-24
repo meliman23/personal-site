@@ -1,8 +1,8 @@
 
 :root {
-  --text: rgb(186, 177, 236);
-  --base: rgb(40, 31, 48);
-  --accent: rgb(248, 173, 232);
+  --text: rgb(36, 25, 102);
+  --base: rgb(18, 3, 32);
+  --accent: rgb(90, 42, 80);
   --secondary:rgb(45, 68, 47);
   --green:rgb(59, 163, 59);
 
@@ -13,7 +13,7 @@
     scrollbar-width: none;
 }
 body {
-    background: linear-gradient(135deg, rgb(9, 9, 19), rgb(6, 6, 26)); /* Gen 4 inspired colors */
+    background: linear-gradient(135deg, rgb(0, 0, 8), rgb(141, 141, 189)); /* Gen 4 inspired colors */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: flex;
     justify-content: center;
@@ -33,6 +33,11 @@ section{
   justify-content: center;
 align-items: center;
 flex-direction: column;
+
+}
+.con{
+  width: 300px;
+
 
 }
 a {
