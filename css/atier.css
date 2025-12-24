@@ -4,17 +4,19 @@
   --accent: #c895ff;
   --muted: #bdbdd4cc;
   --glass: rgba(255,255,255,0.03);
-           --primary: #84b6bd;
+           
     --glow: 0 0 12px rgba(91, 61, 245, 0.7);
 
 }
 
-*{box-sizing:border-box}
-html,body{height:100%;margin:0;font-family:Montserrat,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;}
+*{box-sizing:border-box
+;
+scrollbar-width: none;}
+html,body{margin:0;font-family:Montserrat,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;}
 body{
   scrollbar-width: none;
   width: 100vw;
-  background:linear-gradient(180deg,#060407da 0%, #0b1606 100%);
+  background:black;
   color:#e9e7ff;
   padding:28px;
   -webkit-font-smoothing:antialiased;
@@ -22,6 +24,14 @@ body{
   flex-direction: column;
   align-items: center;
   overflow-x: hidden;
+}
+.spot{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:8px;
+  margin: 18px;
+
 }
    .pokemon {
             height: 100px;
@@ -32,7 +42,7 @@ body{
         .header {
            
           
-            background: linear-gradient(135deg, var(--primary), #f1b28e);
+            background: linear-gradient(135deg, rgb(55, 47, 128), #574134);
            text-align: center;
             padding: 8px;
             border-radius: 0 0 20px 20px;
@@ -41,7 +51,7 @@ body{
             display: flex;
             flex-direction: row;
             justify-content: center;
-            color: purple;
+            color: rgb(124, 126, 31);
         }
 
         .header h1 {
