@@ -485,11 +485,11 @@ background-color: var(--base);
 }
 
 .floating-girl {
-  width: auto; 
-  height: 200px;
-
-  padding:8px;
-  border-radius: 42px;
+  width: 224px; 
+  height: auto;
+z-index: 3;
+  padding:0px;
+  
   border-bottom: 0;
   animation: girlFloat 3s ease-in-out infinite; /* Floating animation */
   object-fit: cover; /* Ensure image stays proportional */
