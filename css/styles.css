@@ -472,11 +472,17 @@ background-color: var(--base);
 /* Floating Animation */
 @keyframes girlFloat {
   0%, 100% {
-    transform: translateY(0); /* Starting and ending position */
+    transform: translateY(-100px);
+     /* Starting and ending position */
   }
-  50% {
-    transform: translateY(-20px); /* Float up */
+   40% {
+    transform: translateY(90px);
+    /* transform: translateX(-100px); Float up */
   }
+   60% {
+    transform: translateY(100px);
+    transform: translateX(-100px) ;/* Float up */
+   }
 }
 
 .floating-girl-container {
@@ -485,13 +491,14 @@ background-color: var(--base);
 }
 
 .floating-girl {
+  animation: girlFloat 10s ease-in-out infinite; /* Floating animation */
   width: 224px; 
   height: auto;
-z-index: 3;
+z-index: 1;
   padding:0px;
   
   border-bottom: 0;
-  animation: girlFloat 3s ease-in-out infinite; /* Floating animation */
+  
   object-fit: cover; /* Ensure image stays proportional */
   cursor: pointer; /* Make it feel interactive */
   position: relative;
@@ -543,7 +550,8 @@ z-index: 3;
 .pokemon{
   height: 120px;
   width: auto;
-  margin: 0;
+  margin: 0; 
+  z-index: 10;
 }
 
 /* dhydragon  */
