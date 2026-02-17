@@ -1,0 +1,82 @@
+* {
+    scrollbar-width: none;
+  cursor: url(https://cur.cursors-4u.net/games/gam-13/gam1309.ani), url(https://cur.cursors-4u.net/games/gam-13/gam1309.png), auto !important;
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+     color: rgb(161, 89, 161);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+h1 {padding: 0;
+    margin: 0;
+    font-size: 22px;
+   
+    letter-spacing: 19px;
+}h3{
+    word-wrap:break-word;
+}
+.girl{
+    
+  animation: float 15s infinite ease-in;
+
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(-200px);
+      
+     /* Starting and ending position */
+  }
+   40% {
+    transform: translateY(0px);
+       
+    /* transform: translateX(-100px); Float up */
+  }
+   70% {
+    transform: translateY(-80px);
+   
+   }
+}
+hr.expand {
+  width: 0;
+  height:2px;
+  border: none;
+  padding: 2px;
+  border-radius:12px;
+  background-color: rgb(137, 175, 128);
+  margin-bottom: 1px;
+  transition: width 9s ease-out;
+  animation: stretch 12s ease-out forwards;
+}
+@keyframes stretch {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.section{
+    width:100vw ;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.center{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 24px;
+    margin: 12px;
+  
+}
