@@ -8,7 +8,8 @@
   --base: rgb(42, 39, 44);
 
   --green:rgb(59, 163, 59);
-
+overflow-x: hidden;
+scrollbar-width: none;
 }
 
 body {

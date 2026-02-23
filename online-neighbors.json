@@ -60,16 +60,7 @@
     "tt": "https://www.tiktok.com/@..ch33s3?lang=en",
     "link": "/person.html?id=seniee-wu"
   },
-   {
-    "id": "lilquinofficial",
-    "name": "lilquin",
-    "role": "Content Creator",
-    "tier": "A",
-    "avatar": "pictures/pokemon/hydreigon.gif",
-    "bio": "Bro raps and motivates me ngl",
-    "tt": "https://www.tiktok.com/@lilquinofficial?lang=en",
-    "link": "/person.html?id=lilquinofficial"
-  },
+
   {
     "id": "gabe-sans",
     "name": "Gabe Sans",
@@ -79,36 +70,6 @@
     "bio": "gabe Isn't real  (bro cool af.)",
     "tt": "https://www.tiktok.com/@gabe.sanz7?lang=en",
     "link": "/person.html?id=gabe-sans"
-  },
-   {
-    "id": "realraymondrivera",
-    "name": "Raymond The Vampire…",
-    "role": "Music",
-    "tier": "A",
-    "avatar": "pictures/pokemon/hydreigon.gif",
-    "bio": "i reccomend his music ",
-    "tt": "https://www.tiktok.com/@realraymondrivera?lang=en",
-    "link": "/person.html?id=realraymondrivera"
-  },
-  {
-    "id": "deant-the-rapper",
-    "name": "DeAnt the Rapper",
-    "role": "Music",
-    "tier": "A",
-    "avatar": "pictures/pokemon/hydreigon.gif",
-    "bio": "Bro motivates me ngl.",
-    "tt": "https://www.tiktok.com/@deanttherapper?lang=en",
-    "link": "/person.html?id=deant-the-rapper"
-  },
-  {
-    "id": "tigerseye",
-    "name": "Tigerseye",
-    "role": "Artist",
-    "tier": "A",
-    "avatar": "pictures/pokemon/dragonite.gif",
-    "bio": "Really cool paintings.",
-    "tt": "https://www.tiktok.com/@misskitterton?lang=en",
-    "link": "/person.html?id=tigerseye"
   },
   {
     "id": "mcswaggerbadger",
@@ -120,16 +81,6 @@
     "tt": "https://www.tiktok.com/@mcswaggerbadger?lang=en",
     "link": "/person.html?id=mcswaggerbadger"
   },
-   {
-    "id": "therealestseb",
-    "name": "seb",
-    "role": "Video Creator",
-    "tier": "A",
-    "avatar": "pictures/pokemon/drifblim.gif",
-    "bio": "Bro's videos funny asl ngl.",
-    "tt": "https://www.tiktok.com/@therealestseb?lang=en",
-    "link": "/person.html?id=therealestseb"
-  },
   {
     "id": "infinite-monkey",
     "name": "Infinite Monkey",
@@ -140,115 +91,15 @@
     "tt": "https://www.tiktok.com/@infin8monkey?lang=en",
     "link": "/person.html?id=infinite-monkey"
   },
- 
-  {
-    "id": "cincinprincess",
-    "name": "CincinPrincess",
-    "role": "Unknown",
-    "tier": "A",
-    "avatar": "pictures/girl pics/dollz2.gif",
-    "bio": "<3",
-    "tt": "https://tiktok.com/@placeholder",
-    "link": "/person.html?id=cincinprincess"
-  },
-  {
-    "id": "otaku-support-group",
-    "name": "Otaku Support Group",
-    "role": "Real One",
-    "tier": "A",
-    "avatar": "pictures/backgrounds/kamihouse.jpeg",
-    "bio": "<3",
-    "tt": "https://tiktok.com/@placeholder",
-    "link": "/person.html?id=otaku-support-group"
-  },
-  {
-    "id": "sadqueen",
-    "name": "Sadqueen",
-    "role": "Unknown",
-    "tier": "A",
-    "avatar": "pictures/backgrounds/kamihouse.jpeg",
-    "bio": "<3",
-    "tt": "https://tiktok.com/@placeholder",
-    "link": "/person.html?id=sadqueen"
-  },
-  {
-    "id": "tony",
-    "name": "Tony",
-    "role": "Unknown",
-    "tier": "A",
-    "avatar": "pictures/backgrounds/kamihouse.jpeg",
-    "bio": "<3",
-    "tt": "",
-    "link": "/person.html?id=tony"
-  },
-  {
-    "id": "natalie",
-    "name": "Natalie",
-    "role": "Unknown",
-    "tier": "A",
-    "avatar": "pictures/backgrounds/kamihouse.jpeg",
-    "bio": "<3",
-    "tt": "",
-    "link": "/person.html?id=natalie"
-  },
-  {
-    "id": "coco",
-    "name": "Coco",
-    "role": "Unknown",
-    "tier": "A",
-    "avatar": "pictures/backgrounds/kamihouse.jpeg",
-    "bio": "<3",
-    "tt": "",
-    "link": "/person.html?id=coco"
-  },
-  {
-    "id": "jw",
-    "name": "JW",
-    "role": "Unc",
-    "tier": "A",
-    "avatar": "pictures/backgrounds/kamihouse.jpeg",
-    "bio": "<3",
-    "tt": "",
-    "link": "/person.html?id=jw"
-  },
-  {
-    "id": "lisa",
-    "name": "Lisa",
-    "role": "Unknown",
-    "tier": "A",
-    "avatar": "pictures/backgrounds/kamihouse.jpeg",
-    "bio": "<3",
-    "tt": "",
-    "link": "/person.html?id=lisa"
-  },
-  {
-    "id": "snoopy",
-    "name": "Snoopy",
-    "role": "Unknown",
-    "tier": "A",
-    "avatar": "pictures/backgrounds/kamihouse.jpeg",
-    "bio": "<3",
-    "tt": "",
-    "link": "/person.html?id=snoopy"
-  },
   {
     "id": "forgotten",
-    "name": "The People I Forgot",
-    "role": "Gone Not Forgotten",
+    "name": "a ummm wait ",
+    "role": "hold up ",
     "tier": "A",
     "avatar": "pictures/backgrounds/kamihouse.jpeg",
-    "bio": "I'm sure there's more.",
+    "bio": "i cant belive someone is reading this . your deep in the site now lol",
     "tt": "",
     "link": "/person.html?id=forgotten"
-  },
-  {
-    "id": "rj",
-    "name": "RJ",
-    "role": "Unknown",
-    "tier": "A",
-    "avatar": "pictures/backgrounds/kamihouse.jpeg",
-    "bio": "<3",
-    "tt": "",
-    "link": "/person.html?id=rj"
   }
+
 ]
