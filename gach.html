@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Animation Codes</title>
+
+
+  <link rel="stylesheet" href="./css/gacha.css">
+</head>
+
+<body>
+  <h1>Gacha codes</h1>
+  <a href="./index.html">Back</a>
+  <div class="container" id="list"></div>
+
+  <script>
+    const data = {
+      "🧍 Idle / Standing": [
+        ["Stand", "9WR7W6X6F"],
+        ["Cool Stand", "1B58CTQN7"],
+        ["Stand Crash Out", "9NZ1J3ZBY"],
+        ["Stand Peace Sign", "VZFVAAAVIW"]
+      ],
+
+      "🚶 Movement": [
+        ["Walking", "WL6PAP93T"],
+        ["Backwards", "OH4UEUZAD"],
+        ["Running", "Z2JYHD9IO"],
+        ["Running Fast", "CKVZKMC2J"],
+        ["Sneaking", "IDFV9WE26"],
+        ["Sneaky Running", "BFXWSCRNP"],
+        ["Sassy Walk", "PDSUI92XX"],
+        ["Injured/Sad Walk", "SFVBR2Q2D"],
+        ["Starting/Stopping", "5TVMBN923"]
+      ],
+
+      "🪑 Sitting / Transitions": [
+        ["Standing/Sitting", "LT1WUN25J"],
+        ["Sitting/Laying", "9NVQRFDWR"],
+        ["Other Stand/Sit", "9VF4F7DIN"],
+        ["Standing/Kneeling", "U31TAPLQH"],
+        ["Sassy Sit", "QRWZW8R63"]
+      ],
+
+      "🙆 Poses & Gestures": [
+        ["Folded Hands", "IW1EO2X15"],
+        ["Folded Arms", "FN8H533S2"],
+        ["Hands Out", "6491WSY82"],
+        ["Behind Head", "P64O6L4VL"],
+        ["Behind Back", "U4GPJ49HZ"],
+        ["One Hand Up", "5ZQIAVUQC"],
+        ["Wave Hi", "IR22GM2IO"]
+      ],
+
+      "🎭 Actions / Tricks": [
+        ["Mario Jump", "PY3ZRH17M"],
+        ["Cartwheel", "NNPB2QPJK"],
+        ["Sit Kick", "ZHQLWHVFX"],
+        ["Peace Sign Jump", "1BFSBEYXW"]
+      ],
+
+      "💃 Dances": [
+        ["Head Bop Dance", "PNB9YG6T8"],
+        ["Dance Side to Side", "J2FFZZO4N"],
+        ["Dance Sway", "3LF95FV8T"],
+        ["Cat Ear Dance", "3EAY1CJJP"],
+        ["Hands Out Dance", "33UQLISOE"],
+        ["Pokedance 1", "LKI9EECNK"],
+        ["Pokedance 2", "379GZBAAF"],
+        ["Pokedance 3", "T5UOUSNVB"]
+      ],
+
+      "💀 Chaos Energy": [
+        ["Sit Crash Out", "7GyF6BV69"]
+      ]
+    };
+
+    const list = document.getElementById("list");
+
+    for (const category in data) {
+      const header = document.createElement("h2");
+      header.innerText = category;
+      list.appendChild(header);
+
+      data[category].forEach(([name, code]) => {
+        const item = document.createElement("div");
+        item.className = "item";
+
+        item.innerHTML = `
+        <div class="label">${name}: <span class="code">${code}</span></div>
+        <button onclick="copyCode(this, '${code}')">Copy</button>
+      `;
+
+        list.appendChild(item);
+      });
+    }
+
+    function copyCode(button, code) {
+      navigator.clipboard.writeText(code);
+
+      button.innerText = "Copied!";
+      button.classList.add("copied");
+
+      setTimeout(() => {
+        button.innerText = "Copy";
+        button.classList.remove("copied");
+      }, 1200);
+    }
+  </script>
+
+</body>
+
+</html>

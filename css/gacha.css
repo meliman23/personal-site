@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+h2 {
+    margin-top: 25px;
+    font-size: 18px;
+    color: #38bdf8;
+    border-bottom: 1px solid #334155;
+    padding-bottom: 5px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e293b;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.item:hover {
+    transform: scale(1.02);
+}
+
+.label {
+    font-size: 14px;
+}
+
+.code {
+    font-weight: bold;
+    color: #22c55e;
+    margin-left: 6px;
+}
+
+button {
+    background: #38bdf8;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #0ea5e9;
+}
+
+button.copied {
+    background: #22c55e;
+    color: white;
+}

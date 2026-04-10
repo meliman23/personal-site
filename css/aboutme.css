@@ -6,9 +6,9 @@
   --text: #e7e7ff;
   --accent: var(--neon-pink);
   --panel: #111122;
-  
-            --primary: #84b6bd;
-            --glow: 0 0 12px rgba(91, 61, 245, 0.7);
+
+  --primary: #84b6bd;
+  --glow: 0 0 12px rgba(91, 61, 245, 0.7);
 }
 
 /* RESET */
@@ -36,7 +36,9 @@ body {
 }
 
 /* Titles */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--accent);
   text-shadow: 0 0 10px var(--accent), 0 0 20px var(--accent);
 }
@@ -52,6 +54,11 @@ a:hover {
   text-shadow: 0 0 10px var(--neon-green);
 }
 
+.girl {
+  height: 200px;
+  width: auto;
+}
+
 /* MAIN GRID */
 .parent {
   display: grid;
@@ -64,19 +71,19 @@ a:hover {
 /* HEADER */
 .div1 {
   grid-column: 1 / 4;
-      position: sticky;
-            top: 0;
-            z-index: 10;
-            background: linear-gradient(135deg, var(--primary), #f1b28e);
-            text-align: center;
-            padding: 4px;
-            border-radius: 0 0 20px 20px;
-            box-shadow: var(--glow);
-            
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            color: purple;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: linear-gradient(135deg, var(--primary), #f1b28e);
+  text-align: center;
+  padding: 4px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: var(--glow);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: purple;
 }
 
 .div1 img {
@@ -84,7 +91,8 @@ a:hover {
 }
 
 /* LEFT + RIGHT COLUMNS */
-.div2, .div4 {
+.div2,
+.div4 {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -169,7 +177,8 @@ img.blink:hover {
   transform: rotateY(180deg);
 }
 
-.front, .back {
+.front,
+.back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -187,6 +196,7 @@ img.blink:hover {
   align-items: center;
   gap: 6px;
 }
+
 
 /* MOBILE FIXES */
 @media (max-width: 900px) {
