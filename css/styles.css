@@ -1,49 +1,64 @@
 :root {
-  --text: rgb(186, 177, 236);
-  --base: rgb(25, 21, 26);
-  --accent: #f8ade8;
-  --secondary:rgb(38, 54, 58);
-  --green:rgb(59, 163, 59);
+  /* main text - soft lavender glow */
+  --text: rgb(220, 210, 255);
 
+  /* background - deep purple night */
+  --base: rgb(20, 16, 35);
+
+  /* primary accent - vibrant purple */
+  --accent: rgb(165, 120, 255);
+
+  /* secondary accent - muted lilac */
+  --secondary: rgb(110, 90, 160);
+
+  /* success / highlight green (kept subtle so it doesn’t clash) */
+  --green: rgb(120, 220, 170);
 }
+
 /* cursor */
 * {
   margin: 0;
   padding: 0;
   scrollbar-width: none;
   cursor: url(https://cur.cursors-4u.net/games/gam-13/gam1309.ani), url(https://cur.cursors-4u.net/games/gam-13/gam1309.png), auto !important;
-} 
+}
 
 body {
-    overflow-x: hidden;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin: 0;
-  
-  width: 100vw; 
+
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  scroll-behavior: smooth; /* Smooth scrolling between sections */
- align-items: center;
+  scroll-behavior: smooth;
+  /* Smooth scrolling between sections */
+  align-items: center;
   background-color: var(--secondary);
   color: var(--text);
   overflow-x: hidden;
 
 }
-iframe{
- width: 100%;
+
+iframe {
+  width: 100%;
 
 
 }
-ul{
+
+ul {
   list-style-type: none;
 }
-li{
+
+li {
   margin: 6px;
 }
+
 p {
   padding: 0;
   margin: 4px;
 }
+
 /* footer */
 /* Footer styling */
 footer {
@@ -81,57 +96,65 @@ footer p {
 }
 
 /* navbar */
-nav{
-    width: auto;
-   max-height: 100px;
-    border-bottom: solid 4px var(--accent);
-    border-radius: 0 0 34px 34px;
-    box-shadow: 0 0px 30px 0px var(--accent);
-    padding: 24px 20px;
-    display: flex;
-    justify-content: space-around;
-    font-size: 23px;
-    font-weight: bold;
-    background-color: var(--secondary);
-    padding: 12px;
-   
+nav {
+  width: auto;
+  max-height: 100px;
+  border-bottom: solid 4px var(--accent);
+  border-radius: 0 0 34px 34px;
+  box-shadow: 0 0px 30px 0px var(--accent);
+  padding: 24px 20px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 23px;
+  font-weight: bold;
+  background-color: var(--secondary);
+  padding: 12px;
+
 }
 
 nav a {
   color: var(--text);
   text-decoration: none;
 }
-nav a:hover::before{
-   text-decoration: none;
-  content: "🌸";  /* Custom bullet */
-  margin-right: 2px;  /* Adds space between bullet & text */
+
+nav a:hover::before {
+  text-decoration: none;
+  content: "🌸";
+  /* Custom bullet */
+  margin-right: 2px;
+  /* Adds space between bullet & text */
 }
+
 .tiktok-wrapper {
-  transform: scale(0.5);    /* adjust 0.5 → 1.0 as needed */
- 
- width: 90%;
- 
+  transform: scale(0.5);
+  /* adjust 0.5 → 1.0 as needed */
+
+  width: 90%;
+
   display: block;
   display: flex;
   flex-direction: row;
-  
+
   gap: 8px;
 }
 
-.links{
+.links {
   display: flex;
   flex-direction: column;
 }
+
 .navbtn {
   display: inline-block;
   padding: 8px 16px;
   margin: 6px;
   border-radius: 12px;
-  background-color: var(--secondary);       /* soft mint neon */
-  color: var(--text);                  /* dark text for contrast */
+  background-color: var(--secondary);
+  /* soft mint neon */
+  color: var(--text);
+  /* dark text for contrast */
   text-decoration: none;
   font-weight: 600;
-  transition: 
+  transition:
     background-color 1s ease,
     transform 0.9s ease,
     box-shadow 0.9s ease;
@@ -141,7 +164,7 @@ nav a:hover::before{
   background-color: var(--accent);
   color: var(--base);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .navbtn:hover::before {
@@ -149,7 +172,7 @@ nav a:hover::before{
   margin-right: 6px;
 }
 
-.top{
+.top {
   background-color: var(--base);
   color: var(--text);
   font-family: Arial, sans-serif;
@@ -161,12 +184,13 @@ nav a:hover::before{
   flex-direction: column;
   border-radius: 0 0 63px 63px;
 
-  
+
   width: 100%;
-height: 100vh;
+  height: 100vh;
 }
-.top2{
-    background-color: var(--base);
+
+.top2 {
+  background-color: var(--base);
   color: var(--text);
   font-family: Arial, sans-serif;
   margin: 0;
@@ -177,38 +201,39 @@ height: 100vh;
   flex-direction: column;
   border-radius: 300px 0 300px 0px;
 
-  
+
   width: 100vw;
-height: 100vh;
+  height: 100vh;
 }
 
 .flip-container {
-    width:200px;
-    height: 200px;
+  width: 200px;
+  height: 200px;
 
-    perspective: 1000px;
+  perspective: 1000px;
 }
 
 .flipper {
-    width: 100%;
-    height: 100%;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
 }
 
 .flipped {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
-.front, .back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
 }
 
-.bottom{
+.bottom {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -216,17 +241,19 @@ height: 100vh;
   margin: 0;
   height: auto;
 }
-.row{
+
+.row {
   display: flex;
   flex-direction: row;
   align-items: center;
-  
+
   justify-content: space-around;
   width: 80vw;
-  margin: 12px;  
-  
+  margin: 12px;
+
 }
-.text-align{
+
+.text-align {
   display: flex;
   text-align: center;
 }
@@ -239,8 +266,9 @@ height: 100vh;
 }
 
 .tiklogo:hover {
-  transform: scale(1.4); /* smoother than jumping height */
-  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+  transform: scale(1.4);
+  /* smoother than jumping height */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 }
 
 .container {
@@ -265,11 +293,12 @@ h1 {
   0% {
     transform: translateX(70%);
   }
-  
+
   100% {
     transform: translateX(-100%);
   }
 }
+
 /* stamp css */
 .stamps {
   gap: 10px;
@@ -277,14 +306,17 @@ h1 {
   width: 100vw;
   overflow: hidden;
 }
+
 .stamps span {
   display: inline-block;
   white-space: nowrap;
   animation: spinny 25s linear infinite;
 }
-.stamps :hover{
-  animation-play-state: paused; 
+
+.stamps :hover {
+  animation-play-state: paused;
 }
+
 .stamps img {
   width: auto;
   height: 31px;
@@ -292,6 +324,7 @@ h1 {
   transition: transform 0.3s ease-in-out;
   position: relative;
 }
+
 .stamps img::after {
   content: attr(alt);
   position: absolute;
@@ -307,13 +340,15 @@ h1 {
   visibility: hidden;
   transition: opacity 0.2s ease-in-out;
 }
+
 .stamps img:hover {
   transform: scale(1.3);
-  animation-play-state: paused; 
+  animation-play-state: paused;
 }
+
 .stamps img:hover::after {
   opacity: 1;
-  animation-play-state: paused; 
+  animation-play-state: paused;
   visibility: visible;
 }
 
@@ -327,10 +362,14 @@ h1 {
   animation-delay: calc(0.1s * var(--i));
   color: var(--accent);
 }
+
 @keyframes bouncy {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-25px);
     animation-timing-function: ease-out;
@@ -340,26 +379,28 @@ h1 {
 /* hr animation */
 hr.expand {
   width: 0;
-  height:3px;
+  height: 3px;
   border: none;
   padding: 2px;
-  border-radius:12px;
+  border-radius: 12px;
   background-color: var(--accent);
   margin-bottom: 8px;
   transition: width 5s ease-out;
   animation: stretch 9s ease-out forwards;
 }
+
 @keyframes stretch {
   from {
     width: 0;
   }
+
   to {
     width: 80%;
   }
 }
 
 /* Card styles */
-.card{
+.card {
   width: auto;
   height: auto;
   border: solid 4px var(--accent);
@@ -370,20 +411,23 @@ hr.expand {
   margin-bottom: 40px;
   position: relative;
   transition: transform 0.3s ease-in-out;
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
-.card img{
+
+.card img {
 
   min-width: auto;
   height: 25px;
 }
-.card p{
+
+.card p {
   margin: 0;
 }
+
 .status {
- 
-  
+
+
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -391,67 +435,88 @@ hr.expand {
   flex-direction: column;
   color: var(--text);
 }
-.time{
+
+.time {
   font-weight: bold;
   color: var(--text);
 }
 
 .blinkie {
-  position: relative; /* Needed for the tooltip to be positioned relative to this element */
+  position: relative;
+  /* Needed for the tooltip to be positioned relative to this element */
   display: inline-block;
 }
+
 .textbox {
   display: flex;
   flex-direction: column;
   padding: 8px;
 
   max-width: 500px;
- 
- 
+
+
   box-shadow: 0 5px 10px 5px var(--accent);
   border: solid 4px var(--accent);
   border-radius: 22px;
-background-color: var(--base);
-  white-space: normal; /* Allow text wrapping */
+  background-color: var(--base);
+  white-space: normal;
+  /* Allow text wrapping */
 
-  word-wrap: break-word; /* Ensures long words break properly */
+  word-wrap: break-word;
+  /* Ensures long words break properly */
 }
+
 .textbox p {
   font-size: 18px;
 }
+
 /* Tooltip styling */
 .blinkie::after {
-  content: "My own blinkie ...nice"; /* Tooltip text */
+  content: "My own blinkie ...nice";
+  /* Tooltip text */
   position: absolute;
-  top: -40px; /* Position tooltip above the image */
-  left: 50%; /* Center horizontally */
+  top: -40px;
+  /* Position tooltip above the image */
+  left: 50%;
+  /* Center horizontally */
   transform: translateX(-50%);
-  background-color: var(--green); /* Semi-transparent black background */
-  color: var(--text); 
-  font-size: 12px; /* Tooltip text size */
-  padding: 5px 10px; /* Add some padding around the text */
-  border-radius: 4px; /* Rounded corners for the tooltip */
-  white-space: nowrap; /* Prevent text wrapping */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for the tooltip */
-  opacity: 0; /* Hide tooltip by default */
-  pointer-events: none; /* Prevent tooltip from interfering with mouse */
-  z-index: 100; /* Ensure tooltip is above other elements */
-  transition: opacity 0.3s ease; /* Smooth tooltip appearance */
+  background-color: var(--green);
+  /* Semi-transparent black background */
+  color: var(--text);
+  font-size: 12px;
+  /* Tooltip text size */
+  padding: 5px 10px;
+  /* Add some padding around the text */
+  border-radius: 4px;
+  /* Rounded corners for the tooltip */
+  white-space: nowrap;
+  /* Prevent text wrapping */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  /* Subtle shadow for the tooltip */
+  opacity: 0;
+  /* Hide tooltip by default */
+  pointer-events: none;
+  /* Prevent tooltip from interfering with mouse */
+  z-index: 100;
+  /* Ensure tooltip is above other elements */
+  transition: opacity 0.3s ease;
+  /* Smooth tooltip appearance */
 }
 
 
 
-.row .trainer{
+.row .trainer {
   width: 30vw;
   height: auto;
 }
-.updates{
+
+.updates {
   max-width: 300px;
   min-width: 200px;
   height: 20vh;
   border: solid 4px var(--accent);
   border-radius: 22px;
-  
+
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -462,49 +527,63 @@ background-color: var(--base);
   overflow-y: auto;
   box-shadow: 0 5px 20px 5px var(--accent);
 }
-.updates h2{
+
+.updates h2 {
   margin: 0;
 }
-.updates ul{
+
+.updates ul {
   margin: 0px;
 }
+
 /* Floating girl Animation */
 /* Floating Animation */
 @keyframes girlFloat {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(-100px);
-     /* Starting and ending position */
+    /* Starting and ending position */
   }
-   40% {
+
+  40% {
     transform: translateY(90px);
     /* transform: translateX(-100px); Float up */
   }
-   60% {
+
+  60% {
     transform: translateY(100px);
-    transform: translateX(-100px) ;/* Float up */
-   }
+    transform: translateX(-100px);
+    /* Float up */
+  }
 }
 
 .floating-girl-container {
-  position: relative; /* Needed for tooltip positioning */
-  display: inline-block; /* Wrap around the floating girl image */
+  position: relative;
+  /* Needed for tooltip positioning */
+  display: inline-block;
+  /* Wrap around the floating girl image */
 }
 
 .floating-girl {
-  animation: girlFloat 10s ease-in-out infinite; /* Floating animation */
-  width: 224px; 
+  animation: girlFloat 10s ease-in-out infinite;
+  /* Floating animation */
+  width: 224px;
   height: auto;
-z-index: 1;
-  padding:0px;
-  
+  z-index: 1;
+  padding: 0px;
+
   border-bottom: 0;
-  
-  object-fit: cover; /* Ensure image stays proportional */
-  cursor: pointer; /* Make it feel interactive */
+
+  object-fit: cover;
+  /* Ensure image stays proportional */
+  cursor: pointer;
+  /* Make it feel interactive */
   position: relative;
 
 }
-.mood2{
+
+.mood2 {
   position: absolute;
   bottom: 34%;
   left: 95%;
@@ -516,27 +595,41 @@ z-index: 1;
 
 /* Tooltip Styling */
 .floating-girl-container:hover::after {
-  content: "Hello :3 thank for comming!"; /* Tooltip text */
+  content: "Hello :3 thank for comming!";
+  /* Tooltip text */
   position: absolute;
-  top: -40px; /* Position tooltip above the image */
+  top: -40px;
+  /* Position tooltip above the image */
   left: 50%;
   transform: translateX(-50%);
-  background-color: var(--secondary); /* Semi-transparent black background */
-  color: var(--accent); /* White text */
-  font-size: 12px; /* Tooltip text size */
-  padding: 8px 12px; /* Add some padding around the text */
-  border-radius: 4px; /* Rounded corners for the tooltip */
-  white-space: nowrap; /* Prevent text wrapping */
-  box-shadow: var(--accent); /* Subtle shadow for the tooltip */
-  opacity: 1; /* Make it visible */
-  pointer-events: none; /* Prevent tooltip from interfering with mouse */
-  z-index: 10; /* Ensure tooltip is above other elements */
+  background-color: var(--secondary);
+  /* Semi-transparent black background */
+  color: var(--accent);
+  /* White text */
+  font-size: 12px;
+  /* Tooltip text size */
+  padding: 8px 12px;
+  /* Add some padding around the text */
+  border-radius: 4px;
+  /* Rounded corners for the tooltip */
+  white-space: nowrap;
+  /* Prevent text wrapping */
+  box-shadow: var(--accent);
+  /* Subtle shadow for the tooltip */
+  opacity: 1;
+  /* Make it visible */
+  pointer-events: none;
+  /* Prevent tooltip from interfering with mouse */
+  z-index: 10;
+  /* Ensure tooltip is above other elements */
 }
 
 .floating-girl-container::after {
-  content: ""; /* Keep tooltip hidden initially */
+  content: "";
+  /* Keep tooltip hidden initially */
   opacity: 0;
-  transition: opacity 0.3s ease; /* Smooth tooltip appearance */
+  transition: opacity 0.3s ease;
+  /* Smooth tooltip appearance */
 }
 
 
@@ -547,42 +640,77 @@ z-index: 1;
   width: 100px;
   margin: 0;
 }
-.pokemon{
+
+.pokemon {
   height: 120px;
   width: auto;
-  margin: 0; 
+  margin: 0;
   z-index: 10;
 }
 
 /* dhydragon  */
-.dragon{
+.dragon {
   animation: fly2 15s infinite ease-in;
   z-index: -10;
   width: 150px;
   height: auto;
 }
+
 @keyframes fly2 {
-  0%, 100% {transform: translatey(0);}
-  20%{transform: translatey(-200px);}
-  55%{transform: translatey(-110px);}
-  75%{transform: translateY(-410px);}
-  90%{transform: translatey(-100px)}
- 
-  
+
+  0%,
+  100% {
+    transform: translatey(0);
+  }
+
+  20% {
+    transform: translatey(-200px);
+  }
+
+  55% {
+    transform: translatey(-110px);
+  }
+
+  75% {
+    transform: translateY(-410px);
+  }
+
+  90% {
+    transform: translatey(-100px)
+  }
+
+
 }
+
 /* fish luminean  flying */
-.flying{
-  
-animation: fly 10s infinite ease ;
+.flying {
+
+  animation: fly 10s infinite ease;
 }
+
 @keyframes fly {
-  0%{transform: translateX(-400px);}
-  50%{transform: translateX(100px);}
-  75%{transform: translateX(-100px);}
-  90%{transform: translateX(200px)}
-  100% {transform: translateX(-500px);}
+  0% {
+    transform: translateX(-400px);
+  }
+
+  50% {
+    transform: translateX(100px);
+  }
+
+  75% {
+    transform: translateX(-100px);
+  }
+
+  90% {
+    transform: translateX(200px)
+  }
+
+  100% {
+    transform: translateX(-500px);
+  }
 }
-.column{ 
+
+.column {
   padding: 4px;
   display: flex;
   flex-direction: column;
@@ -590,104 +718,132 @@ animation: fly 10s infinite ease ;
   border: solid 4px var(--accent);
   border-radius: 22px;
 }
-.column p{
+
+.column p {
   margin: 0;
   padding: 0;
 
 }
-.column .girl{
+
+.column .girl {
   height: 200px;
   width: 200px;
 }
-.column img{
+
+.column img {
   width: 100px;
 }
 
-.mobile{
+.mobile {
   display: none;
 
 }
-.tree{
+
+.tree {
   display: none;
 }
+
 /* Responsive adjustments */
 @media (max-width: 600px) {
- .textbox iframe {
+  .textbox iframe {
     width: 100% !important;
     height: 152px !important;
-}
+  }
+
   body {
     flex-direction: column;
     margin: 0;
     min-height: 100vh;
-    width: 100vw; 
+    width: 100vw;
     display: flex;
     flex-direction: column;
-    scroll-behavior: smooth; /* Smooth scrolling between sections */
+    scroll-behavior: smooth;
+    /* Smooth scrolling between sections */
     align-items: center;
     background-color: var(--base);
     color: var(--base);
 
   }
-  .top{
+
+  .top {
     border-radius: 0px 0 100px 100px;
     background-color: var(--secondary)
   }
-  .top2{
+
+  .top2 {
     background-color: var(--secondary);
   }
 
- .navbtn {
-  display: inline-block;
-  padding: 8px 16px;
-  margin: 6px;
-  border-radius: 12px;
-  background-color: var(--base);       /* soft mint neon */
-  color: var(--text);                  /* dark text for contrast */
-  text-decoration: none;
-  font-weight: 600;
-  transition: 
-    background-color 1s ease,
-    transform 0.9s ease,
-    box-shadow 0.9s ease;
-}
+  .navbtn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 6px;
+    border-radius: 12px;
+    background-color: var(--base);
+    /* soft mint neon */
+    color: var(--text);
+    /* dark text for contrast */
+    text-decoration: none;
+    font-weight: 600;
+    transition:
+      background-color 1s ease,
+      transform 0.9s ease,
+      box-shadow 0.9s ease;
+  }
 
-.navbtn:hover {
-  background-color: var(--accent);
-  color: var(--base);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-}
- 
+  .navbtn:hover {
+    background-color: var(--accent);
+    color: var(--base);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  }
+
   .container {
     flex-direction: column;
     gap: 20px;
     color: var(--base);
-    
-  }
-  .bouncy span{
-    color:var(--accent);
 
   }
-  .expand{
+
+  .bouncy span {
+    color: var(--accent);
+
+  }
+
+  .expand {
     background-color: var(--secondary);
   }
-  
+
   @keyframes fly {
-    0% ,100%{transform: translatey(300px);}
-    20%{transform: translatey(400px);}
-    75%{transform: translatey(-200px);}
-    90%{transform: translatey(0px)}
-   
+
+    0%,
+    100% {
+      transform: translatey(300px);
+    }
+
+    20% {
+      transform: translatey(400px);
+    }
+
+    75% {
+      transform: translatey(-200px);
+    }
+
+    90% {
+      transform: translatey(0px)
+    }
+
   }
-  footer{
-  background-color: var(--secondary);
-  color: var(--accent);
-  flex-direction: column;
-}
-  .textbox{
+
+  footer {
+    background-color: var(--secondary);
+    color: var(--accent);
+    flex-direction: column;
+  }
+
+  .textbox {
     height: auto;
-   width: 80vw;
+    width: 80vw;
     color: var(--accent);
     background-color: var(--secondary);
     box-shadow: 0 5px 8px 5px var(--base);
@@ -697,43 +853,49 @@ animation: fly 10s infinite ease ;
 
 
   /* show */
-  .mobile{
+  .mobile {
     display: block;
     color: var(--accent);
     padding: 8px;
-   border-radius: 12px;
+    border-radius: 12px;
     background-color: var(--base);
   }
- 
-  .tree{
-      width: auto;
+
+  .tree {
+    width: auto;
     height: 100px;
     display: block;
   }
- 
+
   /* none */
 
-  .pokemon{
+  .pokemon {
     display: none;
   }
-  .card{
+
+  .card {
     display: none;
-    
+
   }
-  nav{
+
+  nav {
     display: none;
   }
- .updates{
-  display: none;
- }
- .pokemon{
-  display: none;
- }
- .column{
-  display: none;
- }
- .tcard{
-  display: none;
- }
+
+  .updates {
+    display: none;
+  }
+
+  .pokemon {
+    display: none;
+  }
+
+  .column {
+    display: none;
+  }
+
+  .tcard {
+    display: none;
+  }
 
 }
