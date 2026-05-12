@@ -4,16 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>hi ♡</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=M+PLUS+Rounded+1c:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="ahiru_css/one.css">
 </head>
 
 <body>
-    <h1>hi</h1>
 
-    <img src="./pictures/blinki/chibimon2.gif" alt="">
-    <img class="photo" src="./pictures/photo/raiiry.jpeg" alt="">
+    <div class="page-wrapper">
 
+        <header class="hero">
+            <img class="mascot" src="./pictures/blinki/chibimon2.gif" alt="chibimon">
+            <h1>hi ♡</h1>
+        </header>
+
+        <section class="photo-section">
+            <div class="photo-frame">
+                <img class="photo" src="./pictures/photo/raiiry.jpeg" alt="photo">
+
+            </div>
+            <div class="col">
+                <p style="color: pink;">"Click me for more drawings"</p>
+                <img class="photo girl" src="./pictures/girl green.png" alt="">
+
+            </div>
+
+        </section>
+
+        <section class="links-section">
+            <h2 class="section-label">✦ drawing recources ✦</h2>
+            <div class="links-list">
+                <a href="https://perspectivetools.com/6-point-curvilinear-perspective">
+                    <span class="link-icon">🔭</span>
+                    <span class="link-text">1–6 perspective tool</span>
+                    <span class="link-arrow">→</span>
+                </a>
+                <!-- add more links below this line -->
+                <a href="https://drawabox.com/">
+                    <span class="link-icon">📦</span>
+                    <span class="link-text">Draw a box lessons</span>
+                    <span class="link-arrow">→</span>
+                </a>
+            </div>
+
+            <h2 class="section-label">✦ Games 🕹️ ✦</h2>
+            <div class="link-list">
+                <a href="https://www.xbox.com/en-US/play">
+                    <span class="link-icon">🎮</span>
+                    <span class="link-text">remote xbox</span>
+                    <span class="link-arrow">→</span>
+                </a>
+
+            </div>
+        </section>
+
+    </div>
+    <script>
+        const girl = document.querySelector('.girl');
+        girl.onclick = function () {
+            alert('I didnt make that yet lol :3');
+        };
+    </script>
 </body>
 
 </html>

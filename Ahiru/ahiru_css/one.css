@@ -1,17 +1,200 @@
+/* ── variables ── */
+:root {
+    --green-deep: #030f01;
+    --green-mid: #2a5c22;
+    --green-soft: #3d7a32;
+    --pink: #f73cc5;
+    --pink-soft: #ffb3ea;
+    --pink-pale: #ffe6f7;
+    --cream: #fffbf4;
+    --text-light: #f0ffe8;
+    --text-muted: #a8d9a0;
+    --font-display: 'Kiwi Maru', serif;
+    --font-body: 'M PLUS Rounded 1c', sans-serif;
+}
+
+/* ── reset ── */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ── body ── */
 body {
+    min-height: 100vh;
+    background-color: var(--green-deep);
+    background-image:
+        radial-gradient(circle at 20% 20%, rgba(247, 60, 197, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(61, 122, 50, 0.4) 0%, transparent 50%);
+    font-family: var(--font-body);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 1.25rem 4rem;
+}
+
+/* ── page wrapper ── */
+.page-wrapper {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+/* ── hero ── */
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.mascot {
+    width: 300px;
+    height: auto;
+    image-rendering: pixelated;
+    filter: drop-shadow(0 0 12px rgba(247, 60, 197, 0.5));
+    animation: float 3s ease-in-out infinite;
+}
+
+.girl {
+    margin-top: -10px;
+    animation: float 2s ease-in-out infinite;
+}
+
+p {
+    margin: 0;
+}
+
+.col {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+h1 {
+    font-family: var(--font-display);
+    font-size: 2.6rem;
+    font-weight: 500;
+    color: var(--pink-pale);
+    letter-spacing: 0.04em;
+    text-shadow: 0 0 24px rgba(247, 60, 197, 0.4);
+}
+
+/* ── photo section ── */
+.photo-section {
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100vw;
 
-    flex-direction: column;
-    background-color: rgb(32, 63, 26);
+}
+
+.photo-frame {
+    padding: 6px;
+    background: linear-gradient(135deg, var(--pink), #a855f7, var(--pink-soft));
+    border-radius: 22px;
+    box-shadow:
+        0 0 0 3px var(--green-mid),
+        0 8px 32px rgba(0, 0, 0, 0.4);
+
 }
 
 .photo {
+    display: block;
     height: 300px;
     width: auto;
-    border-radius: 20px;
-    border: 4px pink solid;
-    margin: 8px;
+    border-radius: 17px;
+    object-fit: cover;
+}
+
+/* ── links section ── */
+.links-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section-label {
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--text-muted);
+    letter-spacing: 0.2em;
+    text-transform: lowercase;
+}
+
+.links-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--text-light);
+    background-color: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 14px;
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.15s ease,
+        box-shadow 0.2s ease;
+    backdrop-filter: blur(4px);
+}
+
+a:hover {
+    background-color: rgba(247, 60, 197, 0.18);
+    border-color: rgba(247, 60, 197, 0.45);
+    transform: translateX(4px);
+    box-shadow: 0 0 16px rgba(247, 60, 197, 0.2);
+}
+
+.link-icon {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.link-text {
+    flex: 1;
+}
+
+.link-arrow {
+    color: var(--pink);
+    font-size: 1.1rem;
+    opacity: 0;
+    transform: translateX(-4px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+a:hover .link-arrow {
+    opacity: 1;
+    transform: translateX(0);
 }
